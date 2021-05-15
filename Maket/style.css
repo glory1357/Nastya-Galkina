@@ -1,0 +1,129 @@
+/*Общие стили*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 10000px;
+    font-family: 'NotoSans-Regular', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.clear{
+    clear: both;
+}
+    
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+/*Стили верхнего блока*/
+.header{
+    height: 56px;
+    padding-top: 12px;
+}
+.header .logo{
+
+float: left;
+}
+
+.header .logo span{
+font-family: 'NotoSans-Medium', sans-serif;
+font-size: 20px;
+line-height: 16px;
+vertical-align: 7px;
+margin-left: 8px;
+}
+
+.header ul{
+    float:right;
+    color: #727272;
+    padding-top: 7px;
+}
+.header ul li{
+    float:left;
+    margin-left: 32px;
+    font-family: 'NotoSans-Light', sans-serif;
+}
+
+/*Стили каталога*/
+.header-search{
+    background-color: #EDEDED;
+    height: 56px;
+}
+.catalog{
+    width: 244px;
+    height: 56px;
+    float: left;
+    background-color: #F46D69;
+    font-family: 'NotoSans-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    color: #FFFFFF;
+    padding-left: 32px;
+    padding-top: 7px;
+}
+.catalog span{
+    padding-left: 13px;
+}
+.phone{
+    height: 56px;
+    float: left;
+    font-family: 'NotoSans-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    padding-left: 28px;
+    padding-top: 19px;
+}
+.phone a{
+    vertical-align: 5px;
+    padding-left: 10px;
+}
+.header-search input{
+width: 352px;
+height: 40px;
+left: 558px;
+right: 386px;
+top: 64px;
+
+background: #FFFFFF;
+border-radius: 4px;
+float: left;
+border: none;
+margin-top: 8px;
+font-family: 'NotoSans-Light', sans-serif;
+font-size: 16px;
+line-height: 40px;
+color: #727272;
+padding-left: 15px;
+margin-left: 32px;
+margin-right: 10px;
+}
+
+.cabinet{
+    float: left;
+    padding-left: 20px;
+    padding-top: 14px;
+}
+
+.cabinet img{
+    height: 26px;
+}
+
+.cabinet span{
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    vertical-align: 6px;
+}
