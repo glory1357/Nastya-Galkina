@@ -1,0 +1,58 @@
+.One a {
+    color: green; font-size: 18px;
+    border-right: solid red 2px;
+    padding: 5px 10px 10px 5px;
+    
+}
+  a:last-child{
+    border-right: none;
+}
+
+.two{
+    margin-top: 20px;
+}
+.two a{
+    color: green;
+    font-size: 18px;
+    margin-left: 5px;
+}
+    
+.two span{
+    width: 2px;
+    height: 40px;
+    background-color: red;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.three{
+    margin-top: 20px;
+    margin-left: -36px;
+}
+.three li{
+    list-style-type: none;
+    float: left;
+    margin-right: 10px;
+}
+.three a{
+    color: green; 
+    font-size: 18px;
+    
+}
+
+
+.three a:after{
+    content: ' ';
+    background-color: red;
+    padding-left: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    
+   
+}
+
+a:hover{
+    color: red;
+}

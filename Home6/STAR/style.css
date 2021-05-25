@@ -1,0 +1,80 @@
+/* div{
+    .one{
+        background: url(IMG/star0.png);
+        width: 76px;
+        height: 78px;
+        float: left;
+    }
+    .one:hover{
+        background: url(IMG/star1.png);
+    }
+    
+    
+    .two{
+        background: url(IMG/star0.png);
+        width: 76px;
+        height: 78px;
+        float: left;
+    }
+    .two:hover{
+        background: url(IMG/star1.png);
+    }
+    
+    
+    
+    .three{
+        background: url(IMG/star0.png);
+        width: 76px;
+        height: 78px;
+        float: left;
+    }
+    .three:hover{
+        background: url(IMG/star1.png);
+    }
+    
+    
+    
+    .four{
+        background: url(IMG/star0.png);
+        width: 76px;
+        height: 78px;
+        float: left;
+    }
+    .four:hover{
+        background: url(IMG/star1.png);
+    }
+    
+    
+    .fife{
+        background: url(IMG/star0.png);
+        width: 76px;
+        height: 78px;
+        float: left;
+    }
+    .fife:hover{
+        background: url(IMG/star1.png);
+    }
+    
+}*/
+
+div{
+    background: url(IMG/star0.png);
+    width: 76px;
+    height: 78px;
+    float: left;
+    background-repeat: no-repeat;
+}
+/*div:hover~
+{
+    background: url(IMG/star1.png);
+    background-repeat: no-repeat;}
+*/
+div:hover{
+    background: url(IMG/star1.png);
+    background-repeat: no-repeat;
+}
+
+div:hover ~ div:nth-last-of-type(n+1)
+{
+    background: url(IMG/star1.png);
+    background-repeat: no-repeat;}

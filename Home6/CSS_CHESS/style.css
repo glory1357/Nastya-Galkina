@@ -1,0 +1,120 @@
+body{
+    box-sizing: border-box;
+}
+.CHESS td
+  {
+    width: 50px;
+    height: 50px;
+    border: solid gray 1px;
+  }
+table.CHESS
+{
+  border-collapse: collapse;
+  display: inline-block;
+}
+table .green td {
+    background-color: #90ff90;
+    height: 25px;
+    width: 20px;
+}
+
+.one td:nth-child(odd){
+    background-color: black;
+}
+
+.three td:nth-child(odd){
+    background-color: black;
+}
+.fife td:nth-child(odd){
+    background-color: black;
+}
+.seven td:nth-child(odd){
+    background-color: black;
+}
+.nine td:nth-child(odd){
+    background-color: black;
+}
+.two td:nth-child(even){
+    background-color: black;
+}
+.four td:nth-child(even){
+    background-color: black;
+}
+.six td:nth-child(even){
+    background-color: black;
+}
+.eight td:nth-child(even){
+    background-color: black;
+}
+ .one td:first-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.two td:first-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.three td:first-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.four td:first-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.fife td:first-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.six td:first-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.seven td:first-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.eight td:first-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.nine td:first-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.one td:last-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.two td:last-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.three td:last-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.four td:last-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.fife td:last-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.six td:last-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.seven td:last-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.eight td:last-child{
+    background-color: #90ff90;
+    width: 25px;
+}
+.nine td:last-child{
+    background-color: #90ff90;
+    width: 25px;
+}
