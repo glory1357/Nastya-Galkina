@@ -1,3 +1,20 @@
+div{
+    background: url(IMG/star0.png);
+    width: 76px;
+    height: 78px;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+div:hover{
+    background: url(IMG/star1.png);
+    background-repeat: no-repeat;
+}
+
+div:hover ~ div:nth-last-of-type(n+1)
+{
+    background: url(IMG/star1.png);
+    background-repeat: no-repeat;}
 /* div{
     .one{
         background: url(IMG/star0.png);
@@ -57,24 +74,3 @@
     
 }*/
 
-div{
-    background: url(IMG/star0.png);
-    width: 76px;
-    height: 78px;
-    float: left;
-    background-repeat: no-repeat;
-}
-/*div:hover~
-{
-    background: url(IMG/star1.png);
-    background-repeat: no-repeat;}
-*/
-div:hover{
-    background: url(IMG/star1.png);
-    background-repeat: no-repeat;
-}
-
-div:hover ~ div:nth-last-of-type(n+1)
-{
-    background: url(IMG/star1.png);
-    background-repeat: no-repeat;}
