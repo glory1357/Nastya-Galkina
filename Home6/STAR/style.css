@@ -1,15 +1,85 @@
-div{
+
+.star{
+    float: left;
+    width: 390px;
+    height: 500px;
+}
+
+.two{
+    float: right;
+}
+.three{
+    float: right;
+}
+.four{
+    float: right;
+}
+.fife{
+    float: right;
+}
+.one{
     background: url(IMG/star0.png);
     width: 76px;
     height: 78px;
-    float: left;
+    float: right;
     background-repeat: no-repeat;
 }
 
-div:hover{
+.one:hover{
     background: url(IMG/star1.png);
     background-repeat: no-repeat;
 }
+
+.two{
+    background: url(IMG/star0.png);
+    width: 76px;
+    height: 78px;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+.two:hover{
+    background: url(IMG/star1.png);
+    background-repeat: no-repeat;
+}
+
+.three{
+    background: url(IMG/star0.png);
+    width: 76px;
+    height: 78px;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+.three:hover{
+    background: url(IMG/star1.png);
+    background-repeat: no-repeat;
+}
+.four{
+    background: url(IMG/star0.png);
+    width: 76px;
+    height: 78px;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+.four:hover{
+    background: url(IMG/star1.png);
+    background-repeat: no-repeat;
+}
+.fife{
+    background: url(IMG/star0.png);
+    width: 76px;
+    height: 78px;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+.fife:hover{
+    background: url(IMG/star1.png);
+    background-repeat: no-repeat;
+}
+
 
 div:hover ~ div:nth-last-of-type(n+1)
 {
