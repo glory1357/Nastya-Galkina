@@ -72,4 +72,5 @@
 div:hover ~ div:nth-last-of-type(n+1)
 {
     background: url(IMG/star1.png);
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;} 
+
