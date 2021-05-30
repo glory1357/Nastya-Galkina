@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name{
+            margin-left: 58px;
+            width: 85%;
+        }
+        .rubrick{
+            margin-left: 110px;
+            margin-top: 4px;
+            padding-right: 32px;
+        }
+        .public{
+            margin-left: 83px;
+            margin-top: 7px;
+            vertical-align: -2px;
+        }
+        .commentYes{
+            margin-top: 7px;
+            vertical-align: -2px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form method="GET" action="TestForm.php">
+       Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br><br>
+      
+       Название статьи:<input class="name" type="text" name="Name"><br>
+
+       Рубрика:
+       <select class="rubrick" name="Rubrick">
+            <option value="1">компьютерная техника</option>
+            <option value="2">графика и дизайн</option>
+            <option value="3" selected>программирование</option>
+        </select><br>
+
+        Публикация:
+        <input class="public" type="radio" name="public" value="1"> на сайте
+        <input type="radio" name="public" value="1"> в журнале
+        <input type="radio" name="public" value="1"> на сайте и в журнале<br>
+
+        Разрешить комментарии:<input class="commentYes" type="checkbox" name="commentYes" checked><br>
+        Текст статьи:<br>
+        <textarea style="width: 98%;" name="comment"></textarea><br>
+        <input type="submit" value="Опубликовать"
+        
+
+
+    </form>
+</body>
+</html>
