@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.head{
+    margin-left: 11px;
+}
+.rubrick{
+    margin-left: 85px;
+    margin-top: 4px;
+    padding-right: 32px;
+}
+
+.commentYes{
+    margin-top: 7px;
+    vertical-align: -2px;
+    margin-bottom: 5px;
+}
+.NameState{
+    margin-left: 170px;
+    margin-right: 15px;
+}
+label.name {
+    float: left;
+}
+input.name{
+    width: 100%;
+}
+textarea{
+    width: 99%
+}
+p{
+    float: left;
+}
+p.rubrick2{
+    margin-top: 6px;
+}
+div.public{
+    margin-left: 10px;
+    float: left;
+}
+
+div.public1{
+    margin-left: 277px;
+}
+.public{
+    vertical-align: -2px;}

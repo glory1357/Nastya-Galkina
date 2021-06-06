@@ -1,0 +1,36 @@
+@media all and (max-width:501px){
+    label{
+        float: none;
+    }
+    div.NameState{
+        margin-right: 15px;
+        margin-left: 0px;
+    }
+    p{
+        float: none;  
+    }
+    p.public2{
+        margin-top: 6px;  
+    }
+    div.rubrick{
+        margin-right: 12px;
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+    div.textarea{
+        margin-right: 12px;
+        margin-left: 0px;
+    }
+    select.rubrick{
+    margin-left: 0px;
+    width: 100%;
+    }
+    .public{
+        margin-left: 0px;
+    }
+    div.public{
+        float: none;
+    }
+    div.public1 {
+        margin-left: 10px;
+}

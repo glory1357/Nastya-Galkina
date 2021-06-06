@@ -5,53 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .name{
-            margin-left: 58px;
-            width: 85%;
-        }
-        .rubrick{
-            margin-left: 110px;
-            margin-top: 4px;
-            padding-right: 32px;
-        }
-        .public{
-            margin-left: 83px;
-            margin-top: 7px;
-            vertical-align: -2px;
-        }
-        .commentYes{
-            margin-top: 7px;
-            vertical-align: -2px;
-            margin-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css" type="text/css">
+    
 </head>
 <body>
-    <form method="GET" action="TestForm.php">
+    <div class="head"><form method="GET" action="https://fe.it-academy.by/TestForm.php">
        Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br><br>
       
-       Название статьи:<input class="name" type="text" name="Name"><br>
+       <label class="name" for="AAA">Название статьи:</label>
+       <div class="NameState">
+           <input id="AAA" class="name" type="text" name="Name"><br>
+        </div>
 
-       Рубрика:
-       <select class="rubrick" name="Rubrick">
+       <p class="rubrick2">Рубрика:</p>
+       <div class="rubrick"><select class="rubrick" name="Rubrick">
             <option value="1">компьютерная техника</option>
             <option value="2">графика и дизайн</option>
             <option value="3" selected>программирование</option>
-        </select><br>
+        </select></div>
 
-        Публикация:
-        <input class="public" type="radio" name="public" value="1"> на сайте
-        <input type="radio" name="public" value="1"> в журнале
-        <input type="radio" name="public" value="1"> на сайте и в журнале<br>
+        <p class="public2">Публикация:</p>
+        <div class="public"><input class="public" id="rad1" type="radio" name="public" value="1"> <label for="rad1">на сайте</label></div>
+        <div class="public"><input class="public" type="radio" id="rad2" name="public" value="1"><label for="rad2"> в журнале</label></div>
+        <div class="public1"><input class="public" type="radio" id="rad3" name="public" value="1"> <label for="rad3">на сайте и в журнале</label></div>
 
-        Разрешить комментарии:<input class="commentYes" type="checkbox" name="commentYes" checked><br>
-        Текст статьи:<br>
-        <textarea style="width: 98%;" name="comment"></textarea><br>
-        <input type="submit" value="Опубликовать"
+        <label>Разрешить комментарии:<input class="commentYes" type="checkbox" name="commentYes" checked></label><br>
+        <p>Текст статьи:</p>
+        <div class="textarea"><textarea name="comment"></textarea></div>
+        <input type="submit" value="Опубликовать">
         
 
 
-    </form>
+    </form></div>
 </body>
 </html>
