@@ -1,0 +1,21 @@
+@media all and (max-width:560px){
+    .menu{
+       float: none;
+       width: 100%;
+       text-align: center;
+       margin: 0px;
+       padding: 0px;
+    }
+    .content{
+        margin-left: 0px;
+        width: 100%;
+        padding-left: 0px;
+        
+    }
+
+}
+@media all and (max-width:399px){
+    .head{
+        height: 60px;
+    }
+}
