@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+li{
+    list-style-type: none;}
+
+ a{
+        text-decoration: none;
+        color: inherit;
+ }
+ 
+
+ .clear{
+  clear: both;
+ }
+
+/*Стили верхнего блока*/
+.header{
+    height: 80px;
+}
+.header ul{
+    float: left;
+    margin-left: 80px;
+    margin-top: 29px;
+}
+.header ul li{
+    float: left;
+    padding-right: 26px;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+}
+
+.phone{
+    float: left;
+    margin-top: 25px;
+    margin-left: 106px;
+    margin-right: 90px;
+}
+.phone a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    vertical-align: 6px;
+    padding-left: 8px;
+}
+.cabinet{
+    float: left;
+    margin-top: 24px;
+}
+.cabinet img{
+    padding-right: 24px;
+}
+.cabinetMan{
+    float: left;
+    padding-left: 45px;
+    padding-top: 24px;
+}
+.cabinetMan img{
+    padding-right: 8px;
+}
+.cabinetMan span{
+    vertical-align: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*Стили LOGO*/
+.logo{
+    height: 82px;
+    padding-top: 1px;
+}
+.logo .container{
+    padding-left: 80px;
+}
+.logo img{
+    padding-right: 45px;
+    float: left;
+}
+.menuLogo{
+    padding-top: 30px;
+}
+.logo input{
+    float: left;
+    width: 702.54px;
+    height: 52px;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    margin-top: 16px;
+    padding-left: 60px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.green{
+    width: 156px;
+    height: 52px;
+    background-color: #81B43F;
+    border-radius: 8px;
+    float: left;
+    margin-left: 45px;
+    margin-top: 16px;
+}
+.green hr{
+    height: 28px;
+    width: 1px;
+    display: inline-block;
+    margin-top: 13px;
+}
+.green span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.corzina{
+    padding-left: 24px;
+    vertical-align: 8px;
+    padding-right: 14px;
+}
+.three{
+    vertical-align: 7px;
+    padding-left: 14px;
+}
+
+
+/*Стили Menu*/
+.menu{
+    height: 22px;
+    margin-top: 9px;
+}
+.menu ul{
+    padding-left: 315px;
+}
+.menu li{
+    float: left;
+    padding-right: 24px;
+    font-size: 16px;
+}
+.menu li:nth-child(5){
+    color: red;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+
+/*Стили Baner*/
+.baner{
+    margin-top: 37px;
+}
+.baner .container{
+    height: 381px;
+    background-image: url(IMG/elka.png);
+}
+.banerRed{
+    width: 511px;
+    height: 226px;
+    background-color: #FF715B;
+    float: right;
+    margin-top: 77px;
+    padding-top: 46px;
+}
+.banerRed span{
+    color: #FFFFFF;
+}
+.HG{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    padding-top: 46px;
+    padding-left: 114px;
+}
+.vsem{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    padding-left: 80px;
+}
+.december{
+    font-size: 22px;
+    padding-left: 149px;
+}
+
+
+/*Стили FilterMenu*/
+
+.filterMenu{
+    height: 89px;
+}
+.filter{
+    width: 272px;
+    height: 89px;
+    float: left;
+    margin-left: 80px;
+    padding-top: 30px;
+    padding-left: 83px;
+    border: solid #F5F5F5 1px;
+}
+.filter span{
+    padding-left: 8px;
+    vertical-align: 4px;
+    font-size: 16px;
+}
+.filterMenu ul{
+    float: left;
+    margin-top: 36px;
+    margin-left: 46px;
+
+}
+.filterMenu ul li{
+    float: left;
+    padding-right: 64px;
+    font-size: 16px;
+}
+
+
+/*Стили Сортировка*/
+.Sorting{
+    height: 73px;
+    background-color: #F9F9F9;
+}
+.arrow{
+    width: 240px;
+    height: 19px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 54px;
+}
+.arrow span{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.arrow span:last-child{
+    color: #000000;
+}
+.arrow img{
+    vertical-align: -2px;
+}
+.SortPo{
+    width: 442px;
+    height: 19px;
+    float: right;
+    margin-top: 54px;
+    margin-right: 96px;
+}
+.SortPo p{
+    display: inline-block;
+    padding-right: 17px;
+    font-size: 14px;
+}
+.SortPo span{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-right: 14px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*Стили Всем по елке, плашки*/
+
+.plashki{
+    height: 49px;
+    background: #F9F9F9;
+}
+.tov{
+    float: left;
+    margin-left: 77px;
+}
+.tov span:first-child{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding-right: 19px;
+}
+.tov span:last-child{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.plashkiIMG{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 94px;
+    margin-top: 16px;
+}
+.plashkiIMG img{
+    padding-left: 16px ;
+}
+
+/*Стили Карточек product*/
+
+.product{
+    background: #F9F9F9;
+    height: 821px;
+}
+.product1{
+    background: #F9F9F9;
+    height: 1358px;
+}
+.OneTree{
+    width: 272px;
+    height: 387px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 16px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.twoTree{
+    width: 272px;
+    height: 387px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    float: left;
+    margin-left: 16px;
+    margin-top: 16px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.divTree{
+    width:232px;
+    height:253px;
+}
+.review{
+    margin-top: 20px;
+}
+.review span{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 7px;
+}
+.OneTree h5,.twoTree h5{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+}
+.OneTree, .twoTree p{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.cash p{
+    float: left;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+.cashhh{
+    float: right;
+    background: #81B43F;
+    height: 36px;
+    width: 36px;
+    border-radius: 8px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-image: url(IMG/cash.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 9px;
+}
+.product1 button{
+    float: left;
+    width: 149px;
+    height: 47px;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    background: #F9F9F9;
+    margin-top: 36px;
+    margin-left: 573px;
+}
+.circle{
+    height: 97px;
+    clear: both;
+}
+.circle img{
+    float: right;
+    margin-top: 36px;
+    margin-right: 80px;
+    width: 47px;
+    height: 47px;
+}
+.display{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 579px;
+}
+
+/*Стили Cristmas baner*/
+
+.Cristmas{
+    height: 209px;
+    background: #F9F9F9;
+}
+.CToys{
+    width: 1136px;
+    height: 209px;  
+    margin: 0 auto;
+    background-image: url(IMG/HG.png);
+    padding-top: 51px;
+    padding-left: 136px;
+}
+.CToys h3{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: black;
+}
+.CToys button{
+    width: 191px;
+    height: 47px;
+    border-radius: 8px;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    background-image: url(IMG/HG.png);
+    margin-top: 13px;
+}
+
+
+/*Стили Футер*/
+.footer{
+    height: 439px;
+    background: #DADADA;
+    
+}
+.service{
+    width: 177px;
+    height: 206px;
+    float: left;
+    margin-left: 128px;
+    margin-top: 58px;
+}
+.footer p{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    padding-bottom: 12px;
+}
+.footer li{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    opacity: 0.8;  
+    padding-bottom: 8px; 
+}
+.compani{
+    width: 177px;
+    height: 206px;
+    float: left;
+    margin-left: 126px;
+    margin-top: 58px;
+}
+.catalog{
+    width: 184px;
+    height: 206px;
+    float: left;
+    margin-left: 110px;
+    margin-top: 58px;
+}
+.mob{
+    width: 216px;
+    height: 127px;
+    float: left;
+    margin-left: 88px;
+    margin-top: 58px;
+}
+.mob img:last-child{
+    padding-left: 19px;
+}
+.mob p{
+    padding-left: 8px;
+}
+.vector{
+    clear: both;
+    float: left;
+    margin-top: 74px;
+    margin-left: 478px;
+    text-align: center;
+}
+.vector p{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 19px;
+}

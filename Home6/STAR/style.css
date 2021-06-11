@@ -5,7 +5,7 @@
     height: 500px;
 }
 
-.one{
+.one, .two, .three, .four, .fife{
     background: url(IMG/star0.png);
     width: 76px;
     height: 78px;
@@ -13,57 +13,7 @@
     background-repeat: no-repeat;
 }
 
-.one:hover{
-    background: url(IMG/star1.png);
-    background-repeat: no-repeat;
-}
-
-.two{
-    background: url(IMG/star0.png);
-    width: 76px;
-    height: 78px;
-    float: right;
-    background-repeat: no-repeat;
-}
-
-.two:hover{
-    background: url(IMG/star1.png);
-    background-repeat: no-repeat;
-}
-
-.three{
-    background: url(IMG/star0.png);
-    width: 76px;
-    height: 78px;
-    float: right;
-    background-repeat: no-repeat;
-}
-
-.three:hover{
-    background: url(IMG/star1.png);
-    background-repeat: no-repeat;
-}
-.four{
-    background: url(IMG/star0.png);
-    width: 76px;
-    height: 78px;
-    float: right;
-    background-repeat: no-repeat;
-}
-
-.four:hover{
-    background: url(IMG/star1.png);
-    background-repeat: no-repeat;
-}
-.fife{
-    background: url(IMG/star0.png);
-    width: 76px;
-    height: 78px;
-    float: right;
-    background-repeat: no-repeat;
-}
-
-.fife:hover{
+.one:hover, .two:hover, .three:hover, .four:hover, .fife:hover{
     background: url(IMG/star1.png);
     background-repeat: no-repeat;
 }
