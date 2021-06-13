@@ -28,7 +28,8 @@ li{
 
 /*Стили верхнего блока*/
 .header{
-    height: 80px;
+    
+    padding-bottom: 31px;
 }
 .header ul{
     float: left;
@@ -81,8 +82,9 @@ li{
 
 /*Стили LOGO*/
 .logo{
-    height: 82px;
+
     padding-top: 1px;
+    margin-bottom: 24px;
 }
 .logo .container{
     padding-left: 80px;
@@ -139,7 +141,7 @@ li{
 
 /*Стили Menu*/
 .menu{
-    height: 22px;
+    
     margin-top: 9px;
 }
 .menu ul{
@@ -198,7 +200,7 @@ li{
 /*Стили FilterMenu*/
 
 .filterMenu{
-    height: 89px;
+   
 }
 .filter{
     width: 272px;
@@ -229,7 +231,7 @@ li{
 
 /*Стили Сортировка*/
 .Sorting{
-    height: 73px;
+   
     background-color: #F9F9F9;
 }
 .arrow{
@@ -275,8 +277,9 @@ li{
 /*Стили Всем по елке, плашки*/
 
 .plashki{
-    height: 49px;
+    
     background: #F9F9F9;
+    padding-bottom: 24px;
 }
 .tov{
     float: left;
@@ -309,11 +312,11 @@ li{
 
 .product{
     background: #F9F9F9;
-    height: 821px;
+    padding-bottom: 16px;
 }
 .product1{
     background: #F9F9F9;
-    height: 1358px;
+    padding-bottom: 35px;
 }
 .OneTree{
     width: 272px;
@@ -422,7 +425,7 @@ li{
 /*Стили Cristmas baner*/
 
 .Cristmas{
-    height: 209px;
+    
     background: #F9F9F9;
 }
 .CToys{
@@ -430,6 +433,7 @@ li{
     height: 209px;  
     margin: 0 auto;
     background-image: url(IMG/HG.png);
+    background-repeat: no-repeat;
     padding-top: 51px;
     padding-left: 136px;
 }
@@ -453,7 +457,7 @@ li{
 
 /*Стили Футер*/
 .footer{
-    height: 439px;
+    
     background: #DADADA;
     
 }

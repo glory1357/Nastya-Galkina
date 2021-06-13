@@ -1,0 +1,325 @@
+@media all and (max-width:1235px){
+.container{
+    width: 100%;
+}
+ .header ul{
+    margin-left: 20px;
+}
+.logo .container{
+    padding-left: 20px;}
+
+.filter{  
+    margin-left: 0px;
+} 
+.arrow{
+    margin-left: 20px;
+}
+.SortPo{
+    margin-right: 54px;
+}
+.tov{
+    margin-left: 18px;
+}
+
+.plashkiIMG{
+    margin-right: 54px;
+}
+.OneTree{
+    margin-left: 20px;
+}
+.CToys{
+    width: 100%;
+}
+.product1 button{
+    margin-left: 518px;
+}
+.display{
+    padding-left: 528px;
+}
+.service{
+    margin-left: 55px;
+
+}
+.vector{
+    margin-left: 415px;
+}
+
+}
+
+
+
+@media all and (max-width:1187px){
+.phone{
+    margin-left: 23px;
+    margin-right: 43px;
+}
+.logo img{
+    padding-right: 6px;
+}
+.menu ul{
+    padding-left: 198px;
+}
+.filterMenu ul{
+    margin-left: 20px;
+
+}}
+
+@media all and (max-width:1173px){
+ .OneTree{
+     float: none;
+     display: inline-block;
+   
+ }
+ .twoTree{
+    float: none;
+    display: inline-block; 
+ }
+.product .container{
+    text-align: center;
+}
+ .product1 .container{
+     text-align: center;
+     position: relative;
+}
+.OneTree h5,.twoTree h5{
+    font-size: 13px;
+}
+.display{
+    padding-left: 0px;
+}
+.product1 button{
+    position: absolute;
+    left: 43%;
+    margin-left: 0px;
+}
+.filter{  
+    padding-left: 30px;
+    width: 192px;
+}
+.filterMenu ul li{
+    padding-right: 50px;
+}
+.header {
+    padding-bottom: 0px;
+}
+.header .container, .logo .container{
+
+    text-align: center;
+}
+.header ul {
+    display: inline-block;
+    float: none;
+}
+.phone {
+    display: inline-block;
+    float: none;
+}
+.cabinet {
+    display: inline-block;
+    float: none;
+}
+.cabinetMan {
+    display: inline-block;
+    float: none;
+}
+.logo img{
+    vertical-align: 12px;
+    float: none;
+}
+.logo input {
+    float: none;
+    vertical-align: 27px;
+    width: 500px;
+}
+.green {
+    display: inline-block;
+    vertical-align: 17px;
+    float: none;
+
+}
+.footer .container{
+    position: relative;
+    text-align: center;
+}
+.service {
+    margin-left: 41px;
+}
+.compani {
+    margin-left: 75px;
+}
+.catalog {
+    margin-left: 59px;
+}
+.mob {
+    margin-left: 64px;
+}
+.vector {
+     margin-left: 0px;
+     position: relative;
+     left: 34%;
+}
+.mob img:last-child {
+    padding-left: 6px;
+}
+}
+
+
+@media all and (max-width:1110px){
+
+.logo input {
+    width: 325px;
+}
+.green {
+    margin-left: 23px;
+}
+.menu ul {
+     padding-left: 0px;
+}
+.filter {
+    margin-right: 10px;
+}
+.filterMenu ul {
+    padding-top: 25px;
+    float: none;
+     margin-top: 0px;
+}
+.arrow {
+    display: inline-block;
+    float: none;
+}
+.SortPo {
+    width: 306px;
+     height: 100%;
+    float: right;
+    margin-top: 54px;
+     margin-right: 0 px;
+}
+.display {
+    padding-left: 17px;
+}
+.service {
+    position: absolute;
+    left: 20%;
+    display: inline-block;
+    float: none;
+    margin-left: 0px;
+}
+.compani {
+    position: absolute;
+    left: 40%;
+    top: 57px;
+    float: none;
+    display: inline-block;
+    margin-top: 0px;
+}
+.catalog {
+    position: absolute;
+    top: 264px;
+    left: 10%;
+    display: inline-block;
+    float: none;
+}
+.mob {
+    position: absolute;
+    top: 316px;
+    left: 50%;
+    display: inline-block;
+    float: none;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.vector {
+    top: 454px;
+}
+.footer {
+    height: 607px;
+
+}
+.menu ul {
+    display: inline-block;
+}
+.menu .container{
+    text-align: center;
+}
+}
+
+@media all and (max-width:695px){
+ .SortPo {
+float: none;
+margin-top: 18px;
+margin-right: 0px;
+width: 100%;
+padding-left: 20px;
+ }
+.filter {
+     padding-left: 30px;
+     width: 100%;
+     text-align: center;
+     border: none;
+ }
+ .menu li {
+    text-align: center;
+     float: none;
+    padding-right: 0px;
+    font-size: 17px;
+ }
+ .product1 button {
+    left: 39%;
+ }
+ .service {
+    left: 18%;
+ }
+ .catalog {
+    left: 7%;
+ }
+ .vector {
+
+    left: 23%;
+ }
+ .banerRed {
+    width: 433px;
+    height: 212px;
+ }
+ .CToys {
+    padding-left: 115px;
+ }
+
+
+ }
+
+ @media all and (max-width:524px){
+ .footer li {
+     padding-bottom: 0px;
+ }
+ .service {
+    margin-top: 15px;
+    left: 34%;
+}
+.compani {
+    left: 18%;
+    top: 191px;
+}
+.catalog {
+    left: 22%;
+}
+.mob {
+    position: absolute;
+    top: 471px;
+    left: 33%;
+}
+.footer p {
+     padding-bottom: 0px;
+}
+.vector {
+    top: 519px;
+}
+.vector p {
+     padding-top: 0px;
+}
+.footer {
+    height: 649px;
+}
+.footer .container {
+    text-align: unset;
+}
+
