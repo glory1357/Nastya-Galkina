@@ -322,4 +322,7 @@ padding-left: 20px;
 .footer .container {
     text-align: unset;
 }
+.filterMenu ul {
+    padding-left: 28px;
+}
  }
