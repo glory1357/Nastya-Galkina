@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST_ANIM</title>
+    <style>
+     
+      
+        .container{
+            position: relative;
+            width: 500px;
+             height: 300px;
+             background: violet;
+             overflow: hidden;
+             text-align: center;
+        
+        }
+        .ball{
+            position: absolute;
+            background: url(IMG/ball.png);
+            height: 50px;
+            width: 50px;
+            background-size: 100%;
+            animation: AnimationBoll 3s linear infinite,
+            AnimationBall2 12s linear infinite;
+           
+        }
+        @keyframes AnimationBoll{
+            0%{bottom: 100%;}
+            50% {bottom: 0;}
+            100% {bottom: 100%;}
+        }
+        @keyframes AnimationBall2{
+           from {left: 0;}
+           to{left: 100%;}
+        }
+        span{
+            color: rgb(27, 107, 99);
+            font-size: 30px;
+            font-family: sans-serif;
+            display: inline-block;
+            padding-top: 100px;
+        }
+        @keyframes animationSpan{
+            from {color:rgb(27, 107, 99) ; font-size: 40px;}
+            50% {color: tomato; font-size: 45px;}
+            to {color:rgb(17, 44, 41) ; font-size: 50px;} 
+        }
+        .container:hover span{
+            animation: animationSpan 2s steps(30)infinite;
+        }
+        .romb{
+            width: 50px;
+            height: 50px;
+            background: yellow;
+            position: absolute;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+        @keyframes animationRomb{
+            from {transform: rotate(0);}
+            50% {transform: rotate(45deg);}
+            to {transform:rotate(180deg) ;} 
+        }  
+        .container:hover .romb{
+            animation: animationRomb 2s steps(5)infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div> 
+        <span>Анимация</span>  
+        <div class="romb"></div> 
+    </div>
+</body>
+</html>
