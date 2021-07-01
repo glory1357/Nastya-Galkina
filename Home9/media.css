@@ -1,0 +1,17 @@
+@media all and (max-width:560px){
+    .container{
+        flex-direction: column-reverse;}
+    ul{
+        list-style-type: none;
+        width:auto;
+    }
+    .menu{
+        text-align: center;
+        background: white;
+
+    }
+    .content img{
+        width: 100%;
+        float: none;
+    }
+}
