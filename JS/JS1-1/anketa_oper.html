@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var family = prompt ("Введите вашу фамилию:");
+        var name = prompt ("Введите ваше имя:");
+        var patronymic = prompt ("Введите ваше отчество:");
+        var yearINT = prompt ("Введите ваш возраст(в годах):");
+        var year = parseInt(yearINT);
+        var day = (year*365);
+        var day5 = (year+5);
+        var gender = confirm ("Ваш пол мужской?");
+        var pension;
+        var genderTrue;
+        (gender==true && year>=62)?pension = "Да":(gender==false && year>=57)?pension = "Да":pension = "Нет";
+            
+        (gender==true)?genderTrue="Мужской":genderTrue="Женский";
+        
+            alert ("Ваше ФИО: "+' '+ family +' '+ name + ' '+ patronymic+ '\n'+ "Ваш возраст в годах:"+' '+ year+ '\n'+ "Ваш возраст в днях:"+' '+ day+ '\n'+ "через 5 лет вам будет:"+' '+ day5+'\n'+"Ваш пол: "+' '+ genderTrue+'\n'+ "вы на пенсии: "+' '+ pension);
+
+    </script>
+</body>
+</html>
