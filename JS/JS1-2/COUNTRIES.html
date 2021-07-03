@@ -7,25 +7,54 @@
     <title>COUNTRIES</title>
     <style>
         input{
-            width: 220px;
+            width: 250px;
+            height: 30px;
+            font-size: 15px;
+            color: #1809ff;
+            background-color: #7bdaff;
+            border-radius: 20px;
         }
     </style>
 </head>
 <body>
-    <input type="button" value='ввод информации о стране' onclick="Vvod()"><br>
-    <input type="button" value='получение информации о стране' onclick="info"><br>
-    <input type="button" value='перечень всех стран' onclick="country"><br>
-    <input type="button" value='удаление информации о стране' onclick="delite"><br>
+    <input type="button" value='Ввод информации о стране' onclick="addCountry()"><br>
+    <input type="button" value='Получение информации о стране' onclick="CountryInfo()"><br>
+    <input type="button" value='Перечень всех стран' onclick="listCountrys()"><br>
+    <input type="button" value='Удаление информации о стране' onclick="deletee()"><br>
 
 
 
 
     <script>
 
-        function Vvod(){
-            var nameCountry=prompt('Введите название страны');
-            var nameStolica=prompt('Введите название столицы')
+      var countrysH={'Германия':'Берлин','Венгрия':'Будапешт','Франция':'Париж'};
+
+    function addCountry(country,capital) {
+        country=prompt('Введите страну:');
+        capital=prompt('Введите столицу:');
+        countrysH[country]=capital;
         }
+
+    function deletee(country) {
+        country = prompt('Введите название страны:');
+      delete countrysH[country];
+      alert('Страна удалена');
+    }
+
+    function CountryInfo(country) {
+        country=prompt('Введите название страны:')
+         if ( country in countrysH ){
+            alert('Столица '+countrysH[country]);}
+        else
+            {alert('Нет информации о стране');}
+             
+    }
+
+    function listCountrys() {
+         for ( var K in countrysH )
+         console.log('Название страны: '+ K+' '+'Название столицы: '+countrysH[K]);
+    }
+
     </script>
 </body>
 </html>
