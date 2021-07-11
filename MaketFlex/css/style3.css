@@ -6,7 +6,8 @@
           box-sizing: border-box; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  height: 1000px; }
 
 a {
   text-decoration: none;
@@ -18,9 +19,10 @@ li {
   list-style-type: none; }
 
 header {
-  background-image: url(../IMG/bg-header.jpg);
+  background-image: url(../IMG/bg-header-inner.jpg);
   background-size: cover;
-  background-position: 50% top; }
+  background-position: 50% top;
+  padding-bottom: 25px; }
   header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -70,157 +72,54 @@ header {
           font-weight: 600;
           font-size: 25px;
           color: #e53a81; }
-  header #carouselExampleIndicators {
-    height: 330px;
-    width: 50%;
-    margin-left: auto;
-    margin-top: 55px; }
-    header #carouselExampleIndicators p {
-      font-family: "Source Sans Pro", sans-serif;
-      font-weight: 600;
-      font-size: 50px;
-      color: #000000;
-      text-align: center; }
-    header #carouselExampleIndicators a {
+
+.col-3 {
+  margin-top: 40px; }
+  .col-3 ul li {
+    border: solid 1px white;
+    border-radius: 30px; }
+    .col-3 ul li a {
+      font-size: 22px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      color: #ff5656; }
-    header #carouselExampleIndicators .carousel-control-next-icon {
-      background: url(../IMG/strelkaR.svg); }
-    header #carouselExampleIndicators .carousel-control-prev-icon {
-      background: url(../IMG/strelkaL.png); }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      background: #e8e8ea;
+      padding: 8px;
+      padding-left: 28px;
+      border: solid 1px white;
+      border-radius: 30px; }
+    .col-3 ul li a:hover {
+      background-color: #e53a81;
+      color: #FFFFFF; }
+    .col-3 ul li .icon-circle-down:before {
+      content: "\ea43";
+      float: right; }
+    .col-3 ul li .icon-circle-down1:before {
+      content: " ";
+      float: right; }
+    .col-3 ul li .btn-primary {
+      color: #000000; }
+    .col-3 ul li .submenu a {
+      font-size: 13px;
+      border-radius: 10px;
+      background: #c7b9ff; }
 
-#market {
-  height: 250px;
-  padding-top: 85px; }
-  #market h3 {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400; }
-    #market h3 span {
-      color: #e53a81;
-      font-weight: 600;
-      font-size: 65px; }
-
-.business {
-  height: 400px;
-  text-align: center;
-  margin-top: 43px; }
-  .business h1 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 600;
-    font-size: 56px; }
-  .business .row:last-child {
-    margin-top: 66px; }
-    .business .row:last-child .col {
-      width: 100px;
-      height: 100px;
-      padding: 0px; }
-      .business .row:last-child .col .dropdown {
-        background: #f3f3f3; }
-        .business .row:last-child .col .dropdown a {
-          color: black;
-          font-size: 20px;
-          font-weight: bold;
-          background: none;
-          border: none; }
-        .business .row:last-child .col .dropdown .dropdown-menu a {
-          font-family: "Roboto", sans-serif;
-          font-size: 14px;
-          font-weight: 400; }
-    .business .row:last-child .col:nth-child(even) {
-      background-color: #f3f3f3; }
-
-.comertion {
-  height: 1025px;
-  background: url(../IMG/bg-form-block.jpg);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  padding-top: 90px; }
-  .comertion h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 59px; }
-  .comertion h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 35px;
-    color: #e53a81; }
-  .comertion input[type="text"] {
-    width: 300px;
-    border: none;
-    margin-bottom: 8px;
-    padding: 6px;
-    border-radius: 18px; }
-  .comertion input[type='checkbox'] {
-    width: 20px;
-    height: 20px;
-    vertical-align: -3px; }
-  .comertion select {
-    width: 300px;
-    border: none;
-    padding: 6px;
-    border-radius: 18px; }
-  .comertion textarea {
-    width: 300px;
-    border: none;
-    padding: 6px;
-    border-radius: 10px; }
-  .comertion input[type='submit'] {
-    width: 300px;
-    border: none;
-    padding: 6px;
-    border-radius: 10px;
-    background: #afa9ff; }
-  .comertion p {
-    font-weight: 500;
-    font-size: 25px;
-    margin-top: 15px; }
-
-.company {
-  margin-top: 45px;
-  text-align: center; }
-  .company h2 {
-    color: #e53a81;
-    font-weight: 700;
-    font-size: 50px;
-    padding-bottom: 45px; }
-  .company .company-everything {
-    background: url(../IMG/logo-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: cover; }
-  .company .row {
-    padding: 32px; }
-    .company .row img {
-      height: 70px;
-      padding-bottom: 20px; }
-
-.leaders {
-  text-align: center;
-  margin-top: 70px; }
-  .leaders h3 {
-    font-size: 35px;
+.col-9 {
+  padding-left: 30px;
+  border-left: solid 5px #e8e8ea;
+  margin-top: 40px; }
+  .col-9 p {
+    padding-top: 12px; }
+  .col-9 .text {
     font-weight: bold; }
-  .leaders h5 {
-    font-weight: 400;
-    margin-top: 30px; }
-    .leaders h5 span {
-      color: #e53a81; }
-  .leaders .leaders-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-top: 40px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+  .col-9 .underlined {
+    font-weight: bold;
+    text-decoration: underline; }
+  .col-9 h1 {
+    text-align: center; }
 
 iframe {
   width: 100%;
@@ -305,4 +204,4 @@ footer {
     font-size: 12px;
     margin-left: 31px; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style3.css.map */
