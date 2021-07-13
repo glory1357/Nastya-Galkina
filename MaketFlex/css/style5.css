@@ -113,18 +113,14 @@ header {
   margin-top: 40px; }
   .col-9 p {
     padding-top: 12px; }
-  .col-9 span {
-    font-weight: bold;
-    color: #4d4d4d; }
   .col-9 h1 {
     font-weight: 700; }
-  .col-9 .tel {
-    color: #e53a81;
-    font-weight: 400;
-    font-size: 28px; }
-  .col-9 .mail {
-    color: #ff5656;
-    font-weight: 400; }
+  .col-9 section .koridor {
+    width: 100%; }
+  .col-9 section .team {
+    width: 35%;
+    margin-right: 20px;
+    padding-bottom: 20px; }
 
 iframe {
   width: 100%;
@@ -209,4 +205,4 @@ footer {
     font-size: 12px;
     margin-left: 31px; }
 
-/*# sourceMappingURL=style4.css.map */
+/*# sourceMappingURL=style5.css.map */

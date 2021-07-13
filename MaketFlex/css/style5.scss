@@ -143,23 +143,21 @@ header{
             padding-top: 12px;
         }
        
-        span{
-            font-weight: bold;
-            color: $hGrey;
-            }
+       
         h1{
             font-weight: 700;
             } 
-        .tel{
-            color: $pink;
-            font-weight: 400;
-            font-size: 28px;
-        }
-        .mail{
-            color:$red;
-            font-weight: 400;
-        }
+        section{
+            .koridor{
+                width: 100%;
+            }
+            .team{
+                width: 35%;
+                margin-right: 20px;
+                padding-bottom: 20px;
+            }
 
+            }
 }
 
 
