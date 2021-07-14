@@ -177,6 +177,12 @@ iframe{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    i{
+        color:$pink;
+        font-size: 25px;
+        margin-right: 10px;
+
+    }
     div, img[alt=logo]{
         padding: 30px;
     }
@@ -193,17 +199,7 @@ iframe{
         font-size: 25px;
         color: $pink;
     }
-    .contacts{
-        .icon-location:before {
-            content: "\e947";
-            padding-right: 8px;
-          }
-        }
-        .icon-mail2:before {
-            content: "\ea84";
-            padding-right: 8px;
-            vertical-align: -2px;
-          }
+    
     }
     
 }
@@ -231,23 +227,13 @@ footer{
                 }
              }
             }
-        .icon{
-            .icon-facebook:before {
-                content: "\ea90";
-                color: $white;
-                font-size: 20px;
+            i{
+                font-size: 25px;
+               color: $white;
+               padding-left: 10px;
+        
             }
-            .icon-instagram:before {
-                content: "\ea92";
-                color: $white;
-                font-size: 20px;
-            }  
-            .icon-vk:before {
-                content: "\ea98";
-                color: $white;
-                font-size: 20px;
-            }
-        } 
+        
     }
     h6{
         color: $white;  
@@ -258,3 +244,4 @@ footer{
       }   
     
     }
+

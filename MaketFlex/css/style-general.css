@@ -141,6 +141,10 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .logo-footer .logo i {
+    color: #e53a81;
+    font-size: 25px;
+    margin-right: 10px; }
   .logo-footer .logo div, .logo-footer .logo img[alt=logo] {
     padding: 30px; }
   .logo-footer .logo p {
@@ -153,13 +157,6 @@ iframe {
     font-weight: 600;
     font-size: 25px;
     color: #e53a81; }
-  .logo-footer .logo .contacts .icon-location:before {
-    content: "\e947";
-    padding-right: 8px; }
-  .logo-footer .logo .icon-mail2:before {
-    content: "\ea84";
-    padding-right: 8px;
-    vertical-align: -2px; }
 
 footer {
   background: #3b2e3b; }
@@ -190,18 +187,10 @@ footer {
           footer .footer .menu ul li a {
             color: #FFFFFF;
             font-weight: 400; }
-    footer .footer .icon .icon-facebook:before {
-      content: "\ea90";
+    footer .footer i {
+      font-size: 25px;
       color: #FFFFFF;
-      font-size: 20px; }
-    footer .footer .icon .icon-instagram:before {
-      content: "\ea92";
-      color: #FFFFFF;
-      font-size: 20px; }
-    footer .footer .icon .icon-vk:before {
-      content: "\ea98";
-      color: #FFFFFF;
-      font-size: 20px; }
+      padding-left: 10px; }
   footer h6 {
     color: #FFFFFF;
     font-family: "Source Sans Pro", sans-serif;
