@@ -162,7 +162,7 @@ header{
 
 
 .business{
-    height: 400px;
+    
     text-align: center;
     margin-top: 43px;
     h1{
@@ -173,8 +173,8 @@ header{
     .row:last-child{  
         margin-top: 66px;
         .col{
-            width: 100px;
-            height: 100px;
+            // width: 100px;
+            // height: 100px;
             padding: 0px;
             .dropdown{ 
                 background: $grey;             
@@ -215,7 +215,7 @@ header{
 
 
 .comertion{
-    height: 1025px;
+    padding-bottom: 30px;
     background: url(../IMG/bg-form-block.jpg);
     background-repeat: no-repeat;
     background-position: 50%;

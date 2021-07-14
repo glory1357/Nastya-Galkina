@@ -1,8 +1,162 @@
-@media all and (max-width:1200px){ 
-    .header{
-        background-position: 58% top;
-    }
-    .menu{
-        margin-left: -66px;
-    }
-}
+@media all and (max-width: 1200px) {
+  header {
+    background-position: 58% top; }
+    header .row .logo .menu {
+      margin-left: -66px; }
+      header .row .logo .menu ul li a {
+        padding: 6px; }
+    header #carouselExampleIndicators p {
+      font-size: 42px; }
+    header #carouselExampleIndicators {
+      width: 55%; }
+
+  .logo-footer .logo div, .logo-footer .logo img[alt=logo] {
+    padding: 0px; } }
+@media all and (max-width: 992px) {
+  header {
+    background-position: 53% top; }
+    header .row .logo img[alt=logo] {
+      width: 65%; }
+    header .row .logo .menu {
+      margin-left: -140px; }
+      header .row .logo .menu ul li a {
+        padding: 4px;
+        font-size: 18px; }
+    header #carouselExampleIndicators p {
+      font-size: 42px; }
+    header #carouselExampleIndicators {
+      width: 72%; }
+
+  #market h3 {
+    font-size: 20px; }
+
+  .comertion h2 {
+    font-size: 27px; }
+
+  .logo-footer .logo a:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .logo-footer .logo a:first-child img[alt=logo] {
+      width: 70%; }
+  .logo-footer .logo .phone a {
+    font-size: 20px; } }
+@media all and (max-width: 770px) {
+  header {
+    background: none; }
+    header .row .logo {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      header .row .logo img[alt=logo] {
+        width: 100%; }
+      header .row .logo .menu {
+        margin-left: 0;
+        margin-top: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        header .row .logo .menu .phone p {
+          padding-left: 21px; }
+    header #carouselExampleIndicators {
+      width: 100%; }
+
+  #market {
+    padding-top: 0; }
+
+  .business .row:last-child {
+    margin-top: 0; }
+    .business .row:last-child .col {
+      margin-right: 50px;
+      margin-bottom: 33px; }
+
+  .comertion {
+    background-position: 10%;
+    padding-top: 40px; }
+    .comertion .row {
+      text-align: center; }
+
+  .company .company-everything {
+    background-size: 100%;
+    background-repeat: repeat-y; }
+    .company .company-everything .row {
+      padding-top: 0; }
+      .company .company-everything .row .col {
+        margin-right: 50px;
+        margin-bottom: 30px; }
+
+  .logo-footer .logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .logo-footer .logo a:first-child {
+      margin-bottom: 30px; }
+    .logo-footer .logo .contacts {
+      margin-top: 20px;
+      text-align: center; }
+
+  footer h6 {
+    text-align: center; }
+  footer .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    footer .footer ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+@media all and (max-width: 454px) {
+  header .logo ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  header #carouselExampleIndicators {
+    margin-top: 15px; }
+    header #carouselExampleIndicators p {
+      font-size: 35px; }
+
+  .business .row:last-child {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .company .company-everything .row {
+    padding-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .leaders .leaders-logo {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; } }
+
+/*# sourceMappingURL=media.css.map */
