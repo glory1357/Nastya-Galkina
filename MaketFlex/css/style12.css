@@ -1,0 +1,15 @@
+.col-9 {
+  padding-left: 30px;
+  border-left: solid 5px #e8e8ea;
+  margin-top: 40px; }
+  .col-9 h5 {
+    color: #e53a81; }
+  .col-9 span {
+    color: #ff5656; }
+  .col-9 li {
+    list-style-type: circle; }
+  .col-9 h1 {
+    padding-bottom: 25px;
+    font-weight: 700; }
+
+/*# sourceMappingURL=style12.css.map */

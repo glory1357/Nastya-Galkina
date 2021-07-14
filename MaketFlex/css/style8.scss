@@ -1,0 +1,36 @@
+@import "variables";
+
+
+    .col-9{
+        padding-left: 30px;
+        border-left: solid 5px #e8e8ea;
+        margin-top: 40px;
+       
+        h1{
+            font-weight: 700;
+            } 
+        section{
+            .cases{
+                display: flex;
+            }
+            .news{
+                width: 45%;
+                display: flex;
+                justify-content: center;
+                background: linear-gradient(#e8e8ea, white);
+                margin: 20px;
+                a{
+                    font-weight: 400;
+                    color: $pink;
+                    text-align: center;
+                    font-size: 20px;
+                }
+            }
+            .news:hover{
+                background: none;
+                border: solid 1px #e8e8ea;;
+            }
+
+            }
+}
+

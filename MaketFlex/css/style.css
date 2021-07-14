@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -6,12 +5,12 @@
           box-sizing: border-box; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Nunito", sans-serif; }
 
 a {
   text-decoration: none;
   color: #000000;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700; }
 
 li {
@@ -40,21 +39,27 @@ header {
         header .logo ul li a {
           font-size: 20px;
           padding: 8px; }
+    header .logo .topmenu a:hover {
+      color: #ff5656; }
     header .logo .topmenu ul {
       position: absolute;
       left: -9999px;
-      /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
       opacity: 1;
       margin-top: 0px;
       padding-top: 8px; }
+      header .logo .topmenu ul li {
+        background: -webkit-gradient(linear, left top, left bottom, from(#c4c8ff), to(#FFFFFF));
+        background: linear-gradient(#c4c8ff, #FFFFFF);
+        margin-bottom: 2px;
+        border-radius: 5px; }
       header .logo .topmenu ul a {
-        white-space: nowrap; }
+        white-space: nowrap;
+        font-size: 15px;
+        font-family: "Nunito", sans-serif;
+        font-weight: 400; }
     header .logo .topmenu li:hover ul {
-      /* Выводим выпадающий пункт при наведении курсора */
       left: 0;
-      /* Приносим его обратно на экран, когда нужно */
       opacity: 1;
-      /* Делаем непрозрачным */
       display: block; }
     header .logo .menu {
       margin-left: -30px; }
@@ -63,10 +68,12 @@ header {
         margin-top: 21px; }
         header .logo .menu .phone p {
           font-family: "Source Sans Pro", sans-serif;
-          font-weight: 400;
-          color: #ff5656; }
+          color: #000000;
+          font-family: "Nunito", sans-serif;
+          font-weight: 300;
+          padding-left: 48px; }
         header .logo .menu .phone a {
-          font-family: "Roboto", sans-serif;
+          font-family: "Nunito", sans-serif;
           font-weight: 600;
           font-size: 25px;
           color: #e53a81; }
@@ -81,14 +88,21 @@ header {
       font-size: 50px;
       color: #000000;
       text-align: center; }
-    header #carouselExampleIndicators a {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      color: #ff5656; }
+    header #carouselExampleIndicators .carousel-inner {
+      text-align: center; }
+      header #carouselExampleIndicators .carousel-inner a {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #000000;
+        border: solid #9490b5;
+        display: inline-block;
+        padding: 4px;
+        padding-left: 20px;
+        padding-right: 20px; }
+      header #carouselExampleIndicators .carousel-inner a:hover {
+        color: #FFFFFF;
+        background: #8397bb; }
     header #carouselExampleIndicators .carousel-control-next-icon {
       background: url(../IMG/strelkaR.svg); }
     header #carouselExampleIndicators .carousel-control-prev-icon {
@@ -99,8 +113,8 @@ header {
   padding-top: 85px; }
   #market h3 {
     text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400; }
+    font-family: "Nunito", sans-serif;
+    font-weight: 600; }
     #market h3 span {
       color: #e53a81;
       font-weight: 600;
@@ -111,9 +125,9 @@ header {
   text-align: center;
   margin-top: 43px; }
   .business h1 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 600;
-    font-size: 56px; }
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 50px; }
   .business .row:last-child {
     margin-top: 66px; }
     .business .row:last-child .col {
@@ -128,10 +142,18 @@ header {
           font-weight: bold;
           background: none;
           border: none; }
+        .business .row:last-child .col .dropdown .dropdown-menu li {
+          margin-bottom: 2px;
+          background: -webkit-gradient(linear, left top, left bottom, from(#c8c7ff), to(transparent));
+          background: linear-gradient(#c8c7ff, transparent); }
+        .business .row:last-child .col .dropdown .dropdown-menu li:hover {
+          background: #e53a81; }
         .business .row:last-child .col .dropdown .dropdown-menu a {
-          font-family: "Roboto", sans-serif;
+          font-family: "Nunito", sans-serif;
           font-size: 14px;
           font-weight: 400; }
+      .business .row:last-child .col .dropdown:hover {
+        background: #e53a81; }
     .business .row:last-child .col:nth-child(even) {
       background-color: #f3f3f3; }
 
@@ -143,14 +165,16 @@ header {
   background-size: cover;
   padding-top: 90px; }
   .comertion h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 59px; }
+    font-size: 59px;
+    text-shadow: 2px 2px 3px gray; }
   .comertion h2 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 700;
     font-size: 35px;
-    color: #e53a81; }
+    color: #e53a81;
+    text-shadow: 2px 2px 3px gray; }
   .comertion input[type="text"] {
     width: 300px;
     border: none;
@@ -178,7 +202,7 @@ header {
     border-radius: 10px;
     background: #afa9ff; }
   .comertion p {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 25px;
     margin-top: 15px; }
 
@@ -189,12 +213,22 @@ header {
     color: #e53a81;
     font-weight: 700;
     font-size: 50px;
-    padding-bottom: 45px; }
+    padding-bottom: 45px;
+    text-shadow: 2px 2px 3px gray; }
+  .company h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400; }
   .company .company-everything {
     background: url(../IMG/logo-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover; }
+    .company .company-everything a {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600; }
+    .company .company-everything a:hover {
+      text-shadow: 2px 2px 3px gray;
+      color: #000000; }
   .company .row {
     padding: 32px; }
     .company .row img {
@@ -206,7 +240,8 @@ header {
   margin-top: 70px; }
   .leaders h3 {
     font-size: 35px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-shadow: 2px 2px 3px gray; }
   .leaders h5 {
     font-weight: 400;
     margin-top: 30px; }
@@ -237,6 +272,10 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .logo-footer .logo i {
+    color: #e53a81;
+    font-size: 25px;
+    margin-right: 10px; }
   .logo-footer .logo div, .logo-footer .logo img[alt=logo] {
     padding: 30px; }
   .logo-footer .logo p {
@@ -249,13 +288,6 @@ iframe {
     font-weight: 600;
     font-size: 25px;
     color: #e53a81; }
-  .logo-footer .logo .contacts .icon-location:before {
-    content: "\e947";
-    padding-right: 8px; }
-  .logo-footer .logo .icon-mail2:before {
-    content: "\ea84";
-    padding-right: 8px;
-    vertical-align: -2px; }
 
 footer {
   background: #3b2e3b; }
@@ -286,18 +318,10 @@ footer {
           footer .footer .menu ul li a {
             color: #FFFFFF;
             font-weight: 400; }
-    footer .footer .icon .icon-facebook:before {
-      content: "\ea90";
+    footer .footer i {
+      font-size: 25px;
       color: #FFFFFF;
-      font-size: 20px; }
-    footer .footer .icon .icon-instagram:before {
-      content: "\ea92";
-      color: #FFFFFF;
-      font-size: 20px; }
-    footer .footer .icon .icon-vk:before {
-      content: "\ea98";
-      color: #FFFFFF;
-      font-size: 20px; }
+      padding-left: 10px; }
   footer h6 {
     color: #FFFFFF;
     font-family: "Source Sans Pro", sans-serif;

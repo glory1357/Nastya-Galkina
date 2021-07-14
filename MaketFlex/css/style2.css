@@ -1,119 +1,11 @@
-@charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-body {
-  font-family: "Roboto", sans-serif;
-  height: 1000px; }
-
-a {
-  text-decoration: none;
-  color: #000000;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700; }
-
-li {
-  list-style-type: none; }
-
-header {
-  background-image: url(../IMG/bg-header-inner.jpg);
-  background-size: cover;
-  background-position: 50% top;
-  padding-bottom: 25px; }
-  header .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-top: 30px; }
-    header .logo ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-top: 10px; }
-      header .logo ul li {
-        font-size: 17px;
-        position: relative; }
-        header .logo ul li a {
-          font-size: 20px;
-          padding: 8px; }
-    header .logo .topmenu ul {
-      position: absolute;
-      left: -9999px;
-      /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
-      opacity: 1;
-      margin-top: 0px;
-      padding-top: 8px; }
-      header .logo .topmenu ul a {
-        white-space: nowrap; }
-    header .logo .topmenu li:hover ul {
-      /* Выводим выпадающий пункт при наведении курсора */
-      left: 0;
-      /* Приносим его обратно на экран, когда нужно */
-      opacity: 1;
-      /* Делаем непрозрачным */
-      display: block; }
-    header .logo .menu {
-      margin-left: -30px; }
-      header .logo .menu .phone {
-        float: right;
-        margin-top: 21px; }
-        header .logo .menu .phone p {
-          font-family: "Source Sans Pro", sans-serif;
-          font-weight: 400;
-          color: #ff5656; }
-        header .logo .menu .phone a {
-          font-family: "Roboto", sans-serif;
-          font-weight: 600;
-          font-size: 25px;
-          color: #e53a81; }
-
-.col-3 {
-  margin-top: 40px; }
-  .col-3 ul li {
-    border: solid 1px white;
-    border-radius: 30px; }
-    .col-3 ul li a {
-      font-size: 22px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      background: #e8e8ea;
-      padding: 8px;
-      padding-left: 28px;
-      border: solid 1px white;
-      border-radius: 30px; }
-    .col-3 ul li a:hover {
-      background-color: #e53a81;
-      color: #FFFFFF; }
-    .col-3 ul li .icon-circle-down:before {
-      content: "\ea43";
-      float: right; }
-    .col-3 ul li .icon-circle-down1:before {
-      content: " ";
-      float: right; }
-    .col-3 ul li .btn-primary {
-      color: #000000; }
-    .col-3 ul li .submenu a {
-      font-size: 13px;
-      border-radius: 10px;
-      background: #c7b9ff; }
-
 .col-9 {
   padding-left: 30px;
   border-left: solid 5px #e8e8ea;
   margin-top: 40px; }
   .col-9 h2 {
     color: #4d4d4d;
-    display: inline-block; }
+    display: inline-block;
+    font-weight: 600; }
   .col-9 p {
     padding-top: 12px; }
   .col-9 h3 {
@@ -127,7 +19,7 @@ header {
   .col-9 h5 {
     color: #e53a81; }
   .col-9 h1 {
-    text-align: center; }
+    font-weight: 700; }
   .col-9 section {
     background: url(../IMG/logo-bg.jpg);
     background-size: 100%; }
@@ -149,88 +41,5 @@ header {
         padding-left: 20px; }
     .col-9 section span {
       font-weight: bold; }
-
-iframe {
-  width: 100%;
-  margin-top: 65px; }
-
-.logo-footer .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .logo-footer .logo div, .logo-footer .logo img[alt=logo] {
-    padding: 30px; }
-  .logo-footer .logo p {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    color: #000000; }
-  .logo-footer .logo a {
-    color: #ff5656; }
-  .logo-footer .logo .phone > a {
-    font-weight: 600;
-    font-size: 25px;
-    color: #e53a81; }
-  .logo-footer .logo .contacts .icon-location:before {
-    content: "\e947";
-    padding-right: 8px; }
-  .logo-footer .logo .icon-mail2:before {
-    content: "\ea84";
-    padding-right: 8px;
-    vertical-align: -2px; }
-
-footer {
-  background: #3b2e3b; }
-  footer .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    footer .footer .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-top: 18px; }
-      footer .footer .menu ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-        footer .footer .menu ul li {
-          padding-right: 20px;
-          font-size: 17px; }
-          footer .footer .menu ul li a {
-            color: #FFFFFF;
-            font-weight: 400; }
-    footer .footer .icon .icon-facebook:before {
-      content: "\ea90";
-      color: #FFFFFF;
-      font-size: 20px; }
-    footer .footer .icon .icon-instagram:before {
-      content: "\ea92";
-      color: #FFFFFF;
-      font-size: 20px; }
-    footer .footer .icon .icon-vk:before {
-      content: "\ea98";
-      color: #FFFFFF;
-      font-size: 20px; }
-  footer h6 {
-    color: #FFFFFF;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    margin-left: 31px; }
 
 /*# sourceMappingURL=style2.css.map */

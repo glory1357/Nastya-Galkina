@@ -1,0 +1,41 @@
+@import "variables";
+
+
+    .col-9{
+        padding-left: 30px;
+        border-left: solid 5px #e8e8ea;
+        margin-top: 40px;
+       
+        h1{
+            font-weight: 700;
+            } 
+        section{
+            .admin{
+                display: flex;
+                margin-top: 30px;
+                .foto{
+                    width: 30%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .text{
+                    width: 70%;
+                    padding-left: 25px;
+                    h3{
+                        color: $pink;
+                        padding-bottom: 12px;
+                        font-size: 26px;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 15px;
+                        color: $hGrey;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            }
+}
+

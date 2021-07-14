@@ -1,138 +1,4 @@
 @import "variables";
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: $f-family-rob;
-    height: 1000px;
-}
-a{
-    text-decoration: none;
-    color: $black;
-    font-family: $f-family-rob;
-    font-weight: 700;
-}
-li{
-    list-style-type: none;
-}
-
-
-header{
-    background-image: url(../IMG/bg-header-inner.jpg);
-    background-size: cover;
-    background-position: 50% top;
-    padding-bottom: 25px;
-    
-    .logo{
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 30px;
-        
-
-        ul{
-            display: flex;
-            margin-top: 10px;
-            
-            li{
-                font-size: 17px;
-                position: relative;
-                a{
-                    font-size: 20px;
-                    padding: 8px;
-                }
-            }        
-        }
-        .topmenu{
-            ul{
-                position:absolute;
-                left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
-                opacity:1;
-                margin-top: 0px;
-                padding-top: 8px;
-                a{
-                     white-space:nowrap;
-                }
-            }
-        }
-        .topmenu li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
-            left:0; /* Приносим его обратно на экран, когда нужно */
-            opacity:1; /* Делаем непрозрачным */
-            display: block;
-        }      
-             
-        
-        .menu{
-            margin-left: -30px;
-            .phone{
-                float: right;
-                margin-top: 21px;
-                
-                p{
-                    font-family: $f-family-pro;
-                    font-weight: 400;
-                    color: $red;
-                }
-                a{
-                    font-family: $f-family-rob;
-                    font-weight: 600;
-                    font-size: 25px;
-                    color: $pink;
-                }
-            }
-
-        }
-    }
-}
-
-
-.col-3{
-    margin-top: 40px;
-    ul{
-        li{
-            
-            border: solid 1px white;
-            border-radius: 30px;
-
-            a{
-                font-size: 22px;
-                display: flex;
-                justify-content: space-between;
-                background: #e8e8ea;
-                padding: 8px;
-                padding-left: 28px;
-                border: solid 1px white;
-                border-radius: 30px;
-            }
-            
-            a:hover{
-                background-color: $pink;
-                color: $white;
-                }
-            
-
-            .icon-circle-down:before {
-                content: "\ea43";
-                float: right;
-              }
-            .icon-circle-down1:before {
-                content: " ";
-                float: right;
-              }
-            .btn-primary{
-                color: $black;
-            }
-            .submenu{
-                a{
-                    font-size: 13px;
-                    border-radius: 10px;
-                    background: #c7b9ff;
-                }
-            }
-        }
-    }
-}
 
     .col-9{
         padding-left: 30px;
@@ -141,6 +7,12 @@ header{
        
         p{
             padding-top: 12px;
+            i{
+                color:$pink;
+                font-size: 25px;
+                margin-right: 10px;
+
+            }
         }
        
         span{
@@ -159,105 +31,10 @@ header{
             color:$red;
             font-weight: 400;
         }
-
-}
-
-
-
-
-
-
-
-
-iframe{
-    width: 100%;
-    margin-top: 65px;
-} 
-
-.logo-footer{
-    .logo{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    div, img[alt=logo]{
-        padding: 30px;
-    }
-    p{
-        font-family: $f-family-pro;
-        font-weight: 400;
-        color: $black;
-    }
-    a{
-        color: $red;
-    }
-    .phone>a{
-        font-weight: 600;
-        font-size: 25px;
-        color: $pink;
-    }
-    .contacts{
-        .icon-location:before {
-            content: "\e947";
-            padding-right: 8px;
-          }
+        iframe{
+            margin-top: 20px;
         }
-        .icon-mail2:before {
-            content: "\ea84";
-            padding-right: 8px;
-            vertical-align: -2px;
-          }
-    }
-    
+        
+
 }
 
-
-footer{
-    background: #3b2e3b;
-    .footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        .menu{
-             display: flex;
-             margin-top: 18px;
-             ul{
-                display: flex;
-                li{
-                    padding-right: 20px;
-                    font-size: 17px;
-                    a{
-                        color: $white;
-                        font-weight: 400;
-                    }
-                }
-             }
-            }
-        .icon{
-            .icon-facebook:before {
-                content: "\ea90";
-                color: $white;
-                font-size: 20px;
-            }
-            .icon-instagram:before {
-                content: "\ea92";
-                color: $white;
-                font-size: 20px;
-            }  
-            .icon-vk:before {
-                content: "\ea98";
-                color: $white;
-                font-size: 20px;
-            }
-        } 
-    }
-    h6{
-        color: $white;  
-        font-family: $f-family-pro;
-        font-weight: 400;
-        font-size: 12px;
-        margin-left: 31px;
-      }   
-    
-    }

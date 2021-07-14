@@ -1,0 +1,23 @@
+@import "variables";
+
+    .col-9{
+        padding-left: 30px;
+        border-left: solid 5px #e8e8ea;
+        margin-top: 40px;
+       
+        h5{
+            color: $pink;
+        }
+        
+        span{
+            color: $red;
+        }
+        li{
+            list-style-type: circle;
+        }
+        h1{
+            padding-bottom: 25px;
+            font-weight: 700;
+        }
+
+}

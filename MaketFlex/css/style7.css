@@ -1,0 +1,29 @@
+.col-9 {
+  padding-left: 30px;
+  border-left: solid 5px #e8e8ea;
+  margin-top: 40px; }
+  .col-9 h1 {
+    font-weight: 700; }
+  .col-9 section .admin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px; }
+    .col-9 section .admin .foto {
+      width: 30%; }
+      .col-9 section .admin .foto img {
+        width: 100%; }
+    .col-9 section .admin .text {
+      width: 70%;
+      padding-left: 25px; }
+      .col-9 section .admin .text h3 {
+        color: #e53a81;
+        padding-bottom: 12px;
+        font-size: 26px;
+        font-weight: 600; }
+      .col-9 section .admin .text p {
+        font-size: 15px;
+        color: #4d4d4d;
+        font-weight: 600; }
+
+/*# sourceMappingURL=style7.css.map */
