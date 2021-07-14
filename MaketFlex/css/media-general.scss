@@ -1,0 +1,155 @@
+@media all and (max-width:1200px){ 
+
+
+
+    .logo-footer .logo div, .logo-footer .logo img[alt=logo] {
+        padding: 0px;
+}
+
+}
+
+
+@media all and (max-width:992px){ 
+
+    header{
+        
+        .row{
+            .logo{
+                img[alt=logo]{
+                    width: 65%;
+                }
+                .menu{
+                    margin-left: -140px;
+                    ul li a {
+                        padding: 4px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .about-us{
+        .row{
+            .col-3{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .logo-footer{
+        .logo{
+            margin-bottom: 20px;
+            a:first-child{
+                display: flex;
+                order: 3;
+                justify-content: center;
+                img[alt=logo]{
+
+                    width: 70%;
+                }
+            }
+            .phone{
+                a{
+                    font-size: 20px;
+                }
+            }
+            
+            
+        }
+    }
+}
+
+
+
+
+@media all and (max-width:770px){ 
+
+    header{
+        background: none;
+        .row{
+            .logo{
+                flex-wrap: wrap;
+                justify-content: center;
+    
+                img[alt=logo] {
+                    width: 100%;
+                }
+                .menu{
+                    margin-left: 0;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .phone{
+                        p{
+                            padding-left: 21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .about-us{
+        .row{
+            flex-direction: column-reverse;
+            align-items: center;
+            .col-3{
+                width: 54%;
+                 justify-content: center;
+                .menu{
+                    .submenu{
+                        display: none;
+                    }
+                }
+                #aboutUs:hover #submenu1{
+                    display: block;
+                }
+                #services:hover #submenu2{
+                  display: block;
+              }
+                 
+            }
+            .col-9{
+                width: 100%;
+            }
+        }
+    }
+
+
+    .logo-footer .logo {
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+         a:first-child{
+            margin-bottom: 30px;
+         }
+        .contacts{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+
+    footer{
+        h6{
+            text-align: center;
+        }
+        .footer{
+            flex-direction: column;
+            
+            ul{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+
+@media all and (max-width:454px){
+
+}

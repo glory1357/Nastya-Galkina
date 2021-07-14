@@ -1,0 +1,22 @@
+@media all and (max-width: 772px) {
+  .about-us .row .col-3 .menu .submenu {
+    display: none; }
+  .about-us .row .col-3 #aboutUs:hover #submenu1 {
+    display: block; }
+  .about-us .row .col-3 #services:hover #submenu2 {
+    display: block; }
+  .about-us .row .col-9 {
+    border: none;
+    text-align: center; }
+    .about-us .row .col-9 .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .about-us .row .col-9 .row .col {
+        text-align: center; } }
+
+/*# sourceMappingURL=media1.css.map */
