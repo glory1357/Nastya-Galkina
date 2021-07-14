@@ -29,7 +29,7 @@
         width: 70%; }
     .logo-footer .logo .phone a {
       font-size: 20px; } }
-@media all and (max-width: 770px) {
+@media all and (max-width: 772px) {
   header {
     background: none; }
     header .row .logo {
@@ -76,7 +76,8 @@
       .about-us .row .col-3 #services:hover #submenu2 {
         display: block; }
     .about-us .row .col-9 {
-      width: 100%; }
+      width: 100%;
+      text-align: center; }
 
   .logo-footer .logo {
     -webkit-box-orient: vertical;
