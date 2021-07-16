@@ -240,16 +240,17 @@ header {
           font-weight: bold;
           background: none;
           border: none; }
-        .business .row:last-child .col .dropdown .dropdown-menu li {
-          margin-bottom: 2px;
-          background: -webkit-gradient(linear, left top, left bottom, from(#c8c7ff), to(transparent));
-          background: linear-gradient(#c8c7ff, transparent); }
-        .business .row:last-child .col .dropdown .dropdown-menu li:hover {
-          background: #e53a81; }
-        .business .row:last-child .col .dropdown .dropdown-menu a {
-          font-family: "Nunito", sans-serif;
-          font-size: 14px;
-          font-weight: 400; }
+        .business .row:last-child .col .dropdown .dropdown-menu {
+          background: #bdbdc5; }
+          .business .row:last-child .col .dropdown .dropdown-menu li {
+            margin-bottom: 2px;
+            background: #dddde2; }
+          .business .row:last-child .col .dropdown .dropdown-menu li:hover {
+            background: #e53a81; }
+          .business .row:last-child .col .dropdown .dropdown-menu a {
+            font-family: "Nunito", sans-serif;
+            font-size: 14px;
+            font-weight: 400; }
       .business .row:last-child .col .dropdown:hover {
         background: #e53a81; }
     .business .row:last-child .col:nth-child(even) {

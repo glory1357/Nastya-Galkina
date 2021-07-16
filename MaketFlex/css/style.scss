@@ -296,9 +296,10 @@ header{
                 border: none;
                 }
                 .dropdown-menu{
+                    background: rgb(189, 189, 197);
                     li{
                         margin-bottom:2px ;
-                        background: linear-gradient(#c8c7ff, transparent);
+                        background: #dddde2;
                     }
                     li:hover{
                         background: $pink;

@@ -203,11 +203,14 @@
         }
         .footer{
             flex-direction: column;
-            
-            ul{
-                flex-direction: column;
-                align-items: center;
+            .menu{
+                ul{
+                    display: none;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
+            
         }
     }
 }
