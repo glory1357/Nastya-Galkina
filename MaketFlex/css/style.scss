@@ -23,6 +23,77 @@ header{
     background-image: url(../IMG/bg-header.jpg);
     background-size: cover;
     background-position: 50% top;
+    #headMenu{
+        z-index: 1;
+        padding-left: 0;
+        position: absolute;
+        background: gray;
+        left: -200px;
+        transition: 0.7s;
+        
+        li{
+            
+            border: none;
+            border-radius: 30px;
+            position: relative;
+            padding-right: 10px;
+            
+            a{
+                font-size: 22px;
+                font-weight: 700;
+                display: flex;
+                justify-content: space-between;
+                
+                padding-left: 28px;
+               
+                border-radius: 30px;
+                transition-duration: 0.3s;
+            }
+            
+            a:hover{
+                background-color: $pink;
+                color: $white;
+                }
+            
+
+           
+            .btn-primary{
+                color: $black;
+            }
+            .submenu{
+                a{
+                    font-size: 12px;
+                    font-family: $f-family-pro;
+                    font-weight: 600;
+                    border-bottom: solid;
+                    
+                }
+                a:hover{
+                    background: $pink;
+                }
+            }
+        }
+    }
+    #button-menu{
+        position: absolute;
+        right: 45px;
+        top: 25px;
+        width: 30px;
+        height: 30px;
+        display: none;
+        button{
+            width: 100%;
+            position: absolute;
+            color: $pink;
+            font-size: 18px;
+        }
+        #open{
+            
+            transform: rotate(90deg);
+        }
+        
+
+    }
     
     .logo{
         display: flex;
@@ -54,9 +125,15 @@ header{
                 margin-top: 0px;
                 padding-top: 8px;
                 li{
-                    background:linear-gradient(#c4c8ff, $white);
+                    background:linear-gradient(#ababab, $white);
                     margin-bottom: 2px;
                     border-radius: 5px;
+                }
+                li:hover{
+                    background: $pink;
+                }
+                li:hover a{
+                    color: $white
                 }
                 a{
                      white-space:nowrap;
@@ -67,7 +144,7 @@ header{
             }
         }
         .topmenu li:hover ul{ 
-            left:0; 
+            left: -25px; 
             opacity:1; 
             display: block;
         }
@@ -101,19 +178,25 @@ header{
     }
     #carouselExampleIndicators{
         height: 330px;
-        width: 50%;
+        width: 56%;
         margin-left: auto;
         margin-top: 55px;
 
         p{
-            font-family: $f-family-pro;
-            font-weight: 600;
+            
+            font-weight: 700;
             font-size: 50px;
             color: $black;
             text-align: center;
         }
         .carousel-inner{
             text-align: center;
+            
+            @keyframes MyAnimation2{
+                from { background-color: #9eb8ff;  }
+                50% { background-color: #c06ffd;  }
+                to { background-color: $pink; color:$white }
+            }
             a{
                 justify-content: center;
                 color: #000000;
@@ -122,6 +205,7 @@ header{
                 padding: 4px;
                 padding-left: 20px;
                 padding-right: 20px;
+                animation: MyAnimation2 5s infinite;
             }
             a:hover{
                 color:$white;
@@ -144,10 +228,35 @@ header{
 #market{
     height: 250px;
     padding-top: 85px;
+    .loader-container {
+        position: absolute;
+        
+        width: 100px;
+        height: 100px;
+        background: #BDE2E0;
+        border-radius: 50%;
+        border: 15px solid #D7695A;
+        box-shadow: inset 0 0 15px rgba(0,0,0,.5);
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 100px;
+        overflow: hidden;
+      }
+      @keyframes load {
+        100% {
+          transform: translateY(-2px);
+        }
+      }
+      .loader {
+        animation: load 11s steps(11, end) infinite;
+      }
    h3{
        text-align: center;
        font-family: $f-family-rob;
        font-weight: 600;
+       
        span{
            color: $pink;
            font-weight: 600;
@@ -311,6 +420,10 @@ header{
         img{
             height: 70px;
             padding-bottom: 20px;
+            transition: 0.5s;
+        }
+        img:hover{
+            transform: scale(1.4);
         }
     }
 }
@@ -337,8 +450,47 @@ header{
         justify-content: space-around;
         margin-top: 40px;
         flex-wrap: wrap;
+        img{
+            transition: 0.3s;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+        .popup-fade, .popup-fade1, .popup-fade2, .popup-fade3, .popup-fade4, .popup-fade5 {
+            display: none;
+        }
+        .popup-fade:before,.popup-fade1:before,.popup-fade2:before,.popup-fade3:before,.popup-fade4:before,.popup-fade5:before {
+            content: '';
+            background: #000;
+            position: fixed; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%;
+            opacity: 0.7;
+            z-index: 9999;
+        }
+        .popup,.popup1,.popup2,.popup3,.popup4,.popup5 {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            padding: 20px;
+            width: 360px;
+            margin-left: -200px;	
+            background: #fff;
+            border: 1px solid orange;
+            border-radius: 4px; 
+            z-index: 99999;
+            opacity: 1;	
+        }
+        .popup-close,.popup-close1,.popup-close2,.popup-close3,.popup-close4,.popup-close5 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
     
     }
+   
 }
 
 

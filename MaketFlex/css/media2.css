@@ -1,0 +1,8 @@
+@media all and (max-width: 540px) {
+  .col-9 section .incoming {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .col-9 section .incoming .service {
+      width: 100%; } }
+
+/*# sourceMappingURL=media2.css.map */

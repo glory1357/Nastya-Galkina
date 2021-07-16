@@ -20,6 +20,33 @@
 </head>
 <body>
     <header>
+        <ul id="headMenu">
+            <li id="aboutUs"><a href="aboutUs.html">О нас</a></i>
+                <ul class="submenu" id="submenu1">
+                    <li><a href="who.html">Кто нам доверяет<br> и почему?</a></li>
+                    <li><a href="cases.html">Кейсы и новости</a></li>
+                    <li><a href="Administration.html">Администрация</a></li>
+                  </ul>
+            </li>
+            <li id="services"><a href="services.html">Услуги</a></i>
+                <ul class="submenu" id="submenu2">
+                    <li><a href="incoming.html">Входящие вызовы</a></li>
+                    <li><a href="Outgoing.html">Исходящие звонки</a></li>
+                    <li><a href="Consulting.html">Консалтинг</a></li>
+                    <li><a href="Recruiting.html">Рекрутинг</a></li>
+                    <li><a href="Other.html">Другое</a></li>
+                </ul>
+            </li>
+            <li><a href="team.html">Команда<span class="icon-circle-down1"></a></li>
+            <li><a href="vacancies.html">Вакансии<span class="icon-circle-down1"></span></a></li>
+            <li><a href="contacts.html">Контакты<span class="icon-circle-down1"></span></a></li>
+        </ul>
+
+        <div id="button-menu">
+            
+            <button id="close" onclick="closes()">X</button>
+            <button id="open" onclick="show()">|||</button>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="logo">
@@ -278,13 +305,48 @@
                     <h5><span>BSL-contact</span> &ndash; ни один клиент не будет пропущен, даже в моменты максимальной нагрузки</h5>
                  </div>
             </div>
+          
             <div class="leaders-logo">
-                <a href=""><img src="IMG/16.jpg" alt=""></a>
-                <a href=""><img src="IMG/17.jpg" alt=""></a>
-                <a href=""><img src="IMG/18.png" alt=""></a>
+                
+                <a class="popup-open" href=""><img src="IMG/16.jpg" alt="stravita"></a>
+                <div class="popup-fade">
+                    <div class="popup">
+                        <a class="popup-close" href="#">Закрыть</a>
+                        <p>Государственное предприятие «Стравита» предлагает частным и юридическим лицам надёжные и эффективные страховые услуги, дающие возможность каждому человеку быть уверенным в завтрашнем дне.</p>
+                    </div>		
+                </div>
+            
+                <a class="popup-open1" href=""><img src="IMG/17.jpg" alt="Atlant"></a>
+                <div class="popup-fade1">
+                    <div class="popup1">
+                        <a class="popup-close1" href="#">Закрыть</a>
+                        <p>ATLANT известен как производитель популярных холодильников, морозильников и стиральных машин. С конвейеров предприятия сходит практичная и надежная техника, отвечающая высоким потребительским запросам. Недаром бытовая техника из Минска известна не только в нашей стране и других постсоветских республиках, но и во многих европейских странах и даже в далекой Австралии.</p>
+                    </div>		
+                </div>
+                <a class="popup-open2" href=""><img src="IMG/18.png" alt=""></a>
+                <div class="popup-fade2">
+                    <div class="popup2">
+                        <a class="popup-close2" href="#">Закрыть</a>
+                        <p>"Белнефтестрах — компания, которая: предлагает полный пакет классических видов страхования имущества, здоровья и ответственности успешным людям, которые ценят свое время и думают о будущем; всегда рядом с клиентом и оперативно оказывает помощь в сложных ситуациях, стремится к высшему качеству во всем, что делает, придерживается норм деловой этики и имеет безупречную репутацию, обеспечивает устойчивый рост капитала акционеров, способствует развитию экономики республики и росту благосостояния граждан Беларуси."</p>
+                    </div>		
+                </div>
+                
                 <a href=""><img src="IMG/19.png" alt=""></a>
-                <a href=""><img src="IMG/20.jpg" alt=""></a>
-                <a href=""><img src="IMG/21.png" alt=""></a>
+                
+                <a class="popup-open4" href=""><img src="IMG/20.jpg" alt=""></a>
+                <div class="popup-fade4">
+                    <div class="popup4">
+                        <a class="popup-close4" href="#">Закрыть</a>
+                        <p>Пе́репись населе́ния — единый процесс сбора, обобщения, анализа и публикации демографических, экономических и социальных данных населения, относящихся по состоянию на определённое время ко всем лицам в стране или чётко ограниченной её части.</p>
+                    </div>		
+                </div>
+                <a class="popup-open5" href=""><img src="IMG/21.png" alt=""></a>
+                <div class="popup-fade5">
+                    <div class="popup5">
+                        <a class="popup-close5" href="#">Закрыть</a>
+                        <p>Пе́репись населе́ния — единый процесс сбора, обобщения, анализа и публикации демографических, экономических и социальных данных населения, относящихся по состоянию на определённое время ко всем лицам в стране или чётко ограниченной её части.</p>
+                    </div>		
+                </div>
               </div>
         </div>
     </section>
@@ -340,7 +402,154 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    
-    
+
+<script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function($) {
+      $('.popup-open').click(function() {
+          $('.popup-fade').fadeIn();
+          return false;
+      });	
+      $('.popup-open1').click(function() {
+          $('.popup-fade1').fadeIn();
+          return false;
+      });	
+      $('.popup-open2').click(function() {
+          $('.popup-fade2').fadeIn();
+          return false;
+      });	
+      $('.popup-open3').click(function() {
+          $('.popup-fade3').fadeIn();
+          return false;
+      });	
+      $('.popup-open4').click(function() {
+          $('.popup-fade4').fadeIn();
+          return false;
+      });	
+      $('.popup-open5').click(function() {
+          $('.popup-fade5').fadeIn();
+          return false;
+      });	
+
+
+
+      		
+      $('.popup-close').click(function() {
+		$(this).parents('.popup-fade').fadeOut();
+		return false;
+	});	
+    $('.popup-close1').click(function() {
+		$(this).parents('.popup-fade1').fadeOut();
+		return false;
+	});	
+    $('.popup-close2').click(function() {
+		$(this).parents('.popup-fade2').fadeOut();
+		return false;
+	});	
+    $('.popup-close3').click(function() {
+		$(this).parents('.popup-fade3').fadeOut();
+		return false;
+	});	
+    $('.popup-close4').click(function() {
+		$(this).parents('.popup-fade4').fadeOut();
+		return false;
+	});	
+    $('.popup-close5').click(function() {
+		$(this).parents('.popup-fade5').fadeOut();
+		return false;
+	});	
+
+
+
+      $(document).keydown(function(e) {
+          if (e.keyCode === 27) {
+              e.stopPropagation();
+              $('.popup-fade').fadeOut();
+          }
+      });
+      $(document).keydown(function(e) {
+          if (e.keyCode === 27) {
+              e.stopPropagation();
+              $('.popup-fade1').fadeOut();
+          }
+      });
+      $(document).keydown(function(e) {
+          if (e.keyCode === 27) {
+              e.stopPropagation();
+              $('.popup-fade2').fadeOut();
+          }
+      });
+      $(document).keydown(function(e) {
+          if (e.keyCode === 27) {
+              e.stopPropagation();
+              $('.popup-fade3').fadeOut();
+          }
+      });
+      $(document).keydown(function(e) {
+          if (e.keyCode === 27) {
+              e.stopPropagation();
+              $('.popup-fade4').fadeOut();
+          }
+      });
+      $(document).keydown(function(e) {
+          if (e.keyCode === 27) {
+              e.stopPropagation();
+              $('.popup-fade5').fadeOut();
+          }
+      });
+      
+      $('.popup-fade').click(function(e) {
+          if ($(e.target).closest('.popup').length == 0) {
+              $(this).fadeOut();					
+          }
+      });
+      $('.popup-fade1').click(function(e) {
+          if ($(e.target).closest('.popup1').length == 0) {
+              $(this).fadeOut();					
+          }
+      });
+      $('.popup-fade2').click(function(e) {
+          if ($(e.target).closest('.popup2').length == 0) {
+              $(this).fadeOut();					
+          }
+      });
+      $('.popup-fade3').click(function(e) {
+          if ($(e.target).closest('.popup3').length == 0) {
+              $(this).fadeOut();					
+          }
+      });
+      $('.popup-fade4').click(function(e) {
+          if ($(e.target).closest('.popup4').length == 0) {
+              $(this).fadeOut();					
+          }
+      });
+      $('.popup-fade5').click(function(e) {
+          if ($(e.target).closest('.popup5').length == 0) {
+              $(this).fadeOut();					
+          }
+      });
+  });
+
+
+var el = document.getElementById('headMenu');
+    var openBtn = document.getElementById('open');
+    var closeBtn = document.getElementById('close')
+
+
+function show(){
+    openBtn.style.zIndex=-1;
+    closeBtn.style.zIndex=1;
+    el.style.left = 0;
+}
+
+function closes(){
+    openBtn.style.zIndex=1;
+    closeBtn.style.zIndex=-1;
+    el.style.left = '-200px';
+}
+
+  
+  </script>   
 </body>
 </html>

@@ -32,6 +32,8 @@
 @media all and (max-width: 772px) {
   header {
     background: none; }
+    header #button-menu {
+      display: inline-block; }
     header .row .logo {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -53,6 +55,8 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
+        header .row .logo .menu .topmenu {
+          display: none; }
         header .row .logo .menu .phone p {
           padding-left: 21px; }
 
@@ -69,11 +73,13 @@
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      .about-us .row .col-3 .menu li #fas1, .about-us .row .col-3 .menu li #fas2 {
+        display: block; }
       .about-us .row .col-3 .menu .submenu {
         display: none; }
-      .about-us .row .col-3 #aboutUs:hover #submenu1 {
+      .about-us .row .col-3 #fas1:hover #submenu1 {
         display: block; }
-      .about-us .row .col-3 #services:hover #submenu2 {
+      .about-us .row .col-3 #fas2:hover #submenu2 {
         display: block; }
     .about-us .row .col-9 {
       width: 100%;
@@ -99,7 +105,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    footer .footer ul {
+    footer .footer .menu ul {
+      display: none;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -107,5 +114,12 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
+@media all and (max-width: 454px) {
+  header .logo ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 /*# sourceMappingURL=media-general.css.map */

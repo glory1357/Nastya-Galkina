@@ -24,11 +24,85 @@ header{
     background-size: cover;
     background-position: 50% top;
     padding-bottom: 25px;
+
+    #headMenu{
+        z-index: 1;
+        padding-left: 0;
+        position: absolute;
+        background: gray;
+        left: -200px;
+        transition: 0.7s;
+        
+        li{
+            
+            border: none;
+            border-radius: 30px;
+            position: relative;
+            padding-right: 10px;
+            
+            a{
+                font-size: 22px;
+                font-weight: 700;
+                display: flex;
+                justify-content: space-between;
+                
+                padding-left: 28px;
+               
+                border-radius: 30px;
+                transition-duration: 0.3s;
+            }
+            
+            a:hover{
+                background-color: $pink;
+                color: $white;
+                }
+            
+
+           
+            .btn-primary{
+                color: $black;
+            }
+            .submenu{
+                a{
+                    font-size: 12px;
+                    font-family: $f-family-pro;
+                    font-weight: 600;
+                    border-bottom: solid;
+                    
+                }
+                a:hover{
+                    background: $pink;
+                }
+            }
+        }
+    }
+    #button-menu{
+        position: absolute;
+        right: 45px;
+        top: 25px;
+        width: 30px;
+        height: 30px;
+        display: none;
+        button{
+            width: 100%;
+            position: absolute;
+        }
+        #open{
+            
+            transform: rotate(90deg);
+        }
+        
+
+    }
+   
+    
+   
     
     .logo{
         display: flex;
         justify-content: flex-end;
         margin-top: 30px;
+        
         
 
         ul{
@@ -45,6 +119,7 @@ header{
             }        
         }
         .topmenu{
+
             a:hover{
                 color:$red
             }
@@ -55,9 +130,15 @@ header{
                 margin-top: 0px;
                 padding-top: 8px;
                 li{
-                    background:linear-gradient(#c4c8ff, $white);
+                    background:linear-gradient(#ababab, $white);
                     margin-bottom: 2px;
                     border-radius: 5px;
+                }
+                li:hover{
+                    background: $pink;
+                }
+                li:hover a{
+                    color: $white
                 }
                 a{
                      white-space:nowrap;
@@ -68,7 +149,7 @@ header{
             }
         }
         .topmenu li:hover ul{ 
-            left:0; 
+            left: -25px; 
             opacity:1; 
             display: block;
         }
@@ -76,6 +157,7 @@ header{
         
         .menu{
             margin-left: -30px;
+           
             .phone{
                 float: right;
                 margin-top: 21px;
@@ -108,6 +190,21 @@ header{
             
             border: solid 1px white;
             border-radius: 30px;
+            position: relative;
+            #fas1{
+                font-size: 30px;
+                position: absolute;
+                top: 13px;
+                left: 217px;
+                display: none;
+            }
+            #fas2{
+                font-size: 30px;
+                position: absolute;
+                top: 13px;
+                left: 217px;
+                display: none;
+            }
 
             a{
                 font-size: 26px;
@@ -130,14 +227,7 @@ header{
                 }
             
 
-            .icon-circle-down:before {
-                content: "\ea43";
-                float: right;
-              }
-            .icon-circle-down1:before {
-                content: " ";
-                float: right;
-              }
+           
             .btn-primary{
                 color: $black;
             }

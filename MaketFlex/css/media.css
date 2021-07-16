@@ -33,6 +33,9 @@
   .comertion h2 {
     font-size: 27px; }
 
+  .leaders a {
+    padding: 20px; }
+
   .logo-footer .logo a:first-child {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,6 +53,8 @@
 @media all and (max-width: 770px) {
   header {
     background: none; }
+    header #button-menu {
+      display: inline-block; }
     header .row .logo {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -71,6 +76,8 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
+        header .row .logo .menu .topmenu {
+          display: none; }
         header .row .logo .menu .phone p {
           padding-left: 21px; }
     header #carouselExampleIndicators {
@@ -147,6 +154,11 @@
         -ms-flex-direction: column;
             flex-direction: column; }
 
+  .comertion h1 {
+    font-size: 46px; }
+
+  .company h2 {
+    font-size: 43px; }
   .company .company-everything .row {
     padding-top: 0;
     -webkit-box-orient: vertical;
@@ -155,8 +167,12 @@
             flex-direction: column; }
 
   .leaders .leaders-logo {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; } }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .leaders .leaders-logo a {
+      padding: 0px;
+      padding-bottom: 20px; } }
 
 /*# sourceMappingURL=media.css.map */

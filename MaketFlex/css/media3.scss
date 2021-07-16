@@ -1,0 +1,9 @@
+@media all and (max-width:540px){
+    .col-9 section .other {
+        flex-wrap: wrap;
+        .service{
+            width: 100%;
+        }
+    }
+
+}

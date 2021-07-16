@@ -22,6 +22,57 @@ header {
   background-size: cover;
   background-position: 50% top;
   padding-bottom: 25px; }
+  header #headMenu {
+    z-index: 1;
+    padding-left: 0;
+    position: absolute;
+    background: gray;
+    left: -200px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+    header #headMenu li {
+      border: none;
+      border-radius: 30px;
+      position: relative;
+      padding-right: 10px; }
+      header #headMenu li a {
+        font-size: 22px;
+        font-weight: 700;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-left: 28px;
+        border-radius: 30px;
+        -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s; }
+      header #headMenu li a:hover {
+        background-color: #e53a81;
+        color: #FFFFFF; }
+      header #headMenu li .btn-primary {
+        color: #000000; }
+      header #headMenu li .submenu a {
+        font-size: 12px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        border-bottom: solid; }
+      header #headMenu li .submenu a:hover {
+        background: #e53a81; }
+  header #button-menu {
+    position: absolute;
+    right: 45px;
+    top: 25px;
+    width: 30px;
+    height: 30px;
+    display: none; }
+    header #button-menu button {
+      width: 100%;
+      position: absolute; }
+    header #button-menu #open {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
   header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,17 +101,21 @@ header {
       margin-top: 0px;
       padding-top: 8px; }
       header .logo .topmenu ul li {
-        background: -webkit-gradient(linear, left top, left bottom, from(#c4c8ff), to(#FFFFFF));
-        background: linear-gradient(#c4c8ff, #FFFFFF);
+        background: -webkit-gradient(linear, left top, left bottom, from(#ababab), to(#FFFFFF));
+        background: linear-gradient(#ababab, #FFFFFF);
         margin-bottom: 2px;
         border-radius: 5px; }
+      header .logo .topmenu ul li:hover {
+        background: #e53a81; }
+      header .logo .topmenu ul li:hover a {
+        color: #FFFFFF; }
       header .logo .topmenu ul a {
         white-space: nowrap;
         font-size: 15px;
         font-family: "Nunito", sans-serif;
         font-weight: 400; }
     header .logo .topmenu li:hover ul {
-      left: 0;
+      left: -25px;
       opacity: 1;
       display: block; }
     header .logo .menu {
@@ -86,7 +141,20 @@ header {
     padding-left: 0; }
     .col-3 ul li {
       border: solid 1px white;
-      border-radius: 30px; }
+      border-radius: 30px;
+      position: relative; }
+      .col-3 ul li #fas1 {
+        font-size: 30px;
+        position: absolute;
+        top: 13px;
+        left: 217px;
+        display: none; }
+      .col-3 ul li #fas2 {
+        font-size: 30px;
+        position: absolute;
+        top: 13px;
+        left: 217px;
+        display: none; }
       .col-3 ul li a {
         font-size: 26px;
         font-weight: 700;
@@ -109,12 +177,6 @@ header {
       .col-3 ul li a:hover {
         background-color: #e53a81;
         color: #FFFFFF; }
-      .col-3 ul li .icon-circle-down:before {
-        content: "\ea43";
-        float: right; }
-      .col-3 ul li .icon-circle-down1:before {
-        content: " ";
-        float: right; }
       .col-3 ul li .btn-primary {
         color: #000000; }
       .col-3 ul li .submenu a {

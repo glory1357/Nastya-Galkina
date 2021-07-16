@@ -20,6 +20,59 @@ header {
   background-image: url(../IMG/bg-header.jpg);
   background-size: cover;
   background-position: 50% top; }
+  header #headMenu {
+    z-index: 1;
+    padding-left: 0;
+    position: absolute;
+    background: gray;
+    left: -200px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s; }
+    header #headMenu li {
+      border: none;
+      border-radius: 30px;
+      position: relative;
+      padding-right: 10px; }
+      header #headMenu li a {
+        font-size: 22px;
+        font-weight: 700;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-left: 28px;
+        border-radius: 30px;
+        -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s; }
+      header #headMenu li a:hover {
+        background-color: #e53a81;
+        color: #FFFFFF; }
+      header #headMenu li .btn-primary {
+        color: #000000; }
+      header #headMenu li .submenu a {
+        font-size: 12px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        border-bottom: solid; }
+      header #headMenu li .submenu a:hover {
+        background: #e53a81; }
+  header #button-menu {
+    position: absolute;
+    right: 45px;
+    top: 25px;
+    width: 30px;
+    height: 30px;
+    display: none; }
+    header #button-menu button {
+      width: 100%;
+      position: absolute;
+      color: #e53a81;
+      font-size: 18px; }
+    header #button-menu #open {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
   header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -48,17 +101,21 @@ header {
       margin-top: 0px;
       padding-top: 8px; }
       header .logo .topmenu ul li {
-        background: -webkit-gradient(linear, left top, left bottom, from(#c4c8ff), to(#FFFFFF));
-        background: linear-gradient(#c4c8ff, #FFFFFF);
+        background: -webkit-gradient(linear, left top, left bottom, from(#ababab), to(#FFFFFF));
+        background: linear-gradient(#ababab, #FFFFFF);
         margin-bottom: 2px;
         border-radius: 5px; }
+      header .logo .topmenu ul li:hover {
+        background: #e53a81; }
+      header .logo .topmenu ul li:hover a {
+        color: #FFFFFF; }
       header .logo .topmenu ul a {
         white-space: nowrap;
         font-size: 15px;
         font-family: "Nunito", sans-serif;
         font-weight: 400; }
     header .logo .topmenu li:hover ul {
-      left: 0;
+      left: -25px;
       opacity: 1;
       display: block; }
     header .logo .menu {
@@ -79,17 +136,32 @@ header {
           color: #e53a81; }
   header #carouselExampleIndicators {
     height: 330px;
-    width: 50%;
+    width: 56%;
     margin-left: auto;
     margin-top: 55px; }
     header #carouselExampleIndicators p {
-      font-family: "Source Sans Pro", sans-serif;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 50px;
       color: #000000;
       text-align: center; }
     header #carouselExampleIndicators .carousel-inner {
       text-align: center; }
+@-webkit-keyframes MyAnimation2 {
+  from {
+    background-color: #9eb8ff; }
+  50% {
+    background-color: #c06ffd; }
+  to {
+    background-color: #e53a81;
+    color: #FFFFFF; } }
+@keyframes MyAnimation2 {
+  from {
+    background-color: #9eb8ff; }
+  50% {
+    background-color: #c06ffd; }
+  to {
+    background-color: #e53a81;
+    color: #FFFFFF; } }
       header #carouselExampleIndicators .carousel-inner a {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -99,7 +171,9 @@ header {
         display: inline-block;
         padding: 4px;
         padding-left: 20px;
-        padding-right: 20px; }
+        padding-right: 20px;
+        -webkit-animation: MyAnimation2 5s infinite;
+                animation: MyAnimation2 5s infinite; }
       header #carouselExampleIndicators .carousel-inner a:hover {
         color: #FFFFFF;
         background: #8397bb; }
@@ -111,6 +185,32 @@ header {
 #market {
   height: 250px;
   padding-top: 85px; }
+  #market .loader-container {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #BDE2E0;
+    border-radius: 50%;
+    border: 15px solid #D7695A;
+    -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100px;
+    overflow: hidden; }
+@-webkit-keyframes load {
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); } }
+@keyframes load {
+  100% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); } }
+  #market .loader {
+    -webkit-animation: load 11s steps(11, end) infinite;
+            animation: load 11s steps(11, end) infinite; }
   #market h3 {
     text-align: center;
     font-family: "Nunito", sans-serif;
@@ -230,7 +330,12 @@ header {
     padding: 32px; }
     .company .row img {
       height: 70px;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+    .company .row img:hover {
+      -webkit-transform: scale(1.4);
+              transform: scale(1.4); }
 
 .leaders {
   text-align: center;
@@ -253,6 +358,40 @@ header {
     margin-top: 40px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    .leaders .leaders-logo img {
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+    .leaders .leaders-logo img:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+    .leaders .leaders-logo .popup-fade, .leaders .leaders-logo .popup-fade1, .leaders .leaders-logo .popup-fade2, .leaders .leaders-logo .popup-fade3, .leaders .leaders-logo .popup-fade4, .leaders .leaders-logo .popup-fade5 {
+      display: none; }
+    .leaders .leaders-logo .popup-fade:before, .leaders .leaders-logo .popup-fade1:before, .leaders .leaders-logo .popup-fade2:before, .leaders .leaders-logo .popup-fade3:before, .leaders .leaders-logo .popup-fade4:before, .leaders .leaders-logo .popup-fade5:before {
+      content: '';
+      background: #000;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+      z-index: 9999; }
+    .leaders .leaders-logo .popup, .leaders .leaders-logo .popup1, .leaders .leaders-logo .popup2, .leaders .leaders-logo .popup3, .leaders .leaders-logo .popup4, .leaders .leaders-logo .popup5 {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      padding: 20px;
+      width: 360px;
+      margin-left: -200px;
+      background: #fff;
+      border: 1px solid orange;
+      border-radius: 4px;
+      z-index: 99999;
+      opacity: 1; }
+    .leaders .leaders-logo .popup-close, .leaders .leaders-logo .popup-close1, .leaders .leaders-logo .popup-close2, .leaders .leaders-logo .popup-close3, .leaders .leaders-logo .popup-close4, .leaders .leaders-logo .popup-close5 {
+      position: absolute;
+      top: 10px;
+      right: 10px; }
 
 iframe {
   width: 100%;

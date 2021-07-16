@@ -22,6 +22,33 @@
 </head>
 <body>
     <header>
+        <ul id="headMenu">
+            <li id="aboutUs"><a href="aboutUs.html">О нас</a></i>
+                <ul class="submenu" id="submenu1">
+                    <li><a href="who.html">Кто нам доверяет<br> и почему?</a></li>
+                    <li><a href="cases.html">Кейсы и новости</a></li>
+                    <li><a href="Administration.html">Администрация</a></li>
+                  </ul>
+            </li>
+            <li id="services"><a href="services.html">Услуги</a></i>
+                <ul class="submenu" id="submenu2">
+                    <li><a href="incoming.html">Входящие вызовы</a></li>
+                    <li><a href="Outgoing.html">Исходящие звонки</a></li>
+                    <li><a href="Consulting.html">Консалтинг</a></li>
+                    <li><a href="Recruiting.html">Рекрутинг</a></li>
+                    <li><a href="Other.html">Другое</a></li>
+                </ul>
+            </li>
+            <li><a href="team.html">Команда<span class="icon-circle-down1"></a></li>
+            <li><a href="vacancies.html">Вакансии<span class="icon-circle-down1"></span></a></li>
+            <li><a href="contacts.html">Контакты<span class="icon-circle-down1"></span></a></li>
+        </ul>
+
+        <div id="button-menu">
+            
+            <button id="close" onclick="closes()">X</button>
+            <button id="open" onclick="show()">|||</button>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="logo">
@@ -194,7 +221,26 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script>
 
+    var el = document.getElementById('headMenu');
+        var openBtn = document.getElementById('open');
+        var closeBtn = document.getElementById('close')
+    
+    
+    function show(){
+        openBtn.style.zIndex=-1;
+        closeBtn.style.zIndex=1;
+        el.style.left = 0;
+    }
+    
+    function closes(){
+        openBtn.style.zIndex=1;
+        closeBtn.style.zIndex=-1;
+        el.style.left = '-200px';
+    }
+    
+      </script>
 
 </body>
 
