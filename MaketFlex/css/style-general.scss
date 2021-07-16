@@ -28,10 +28,11 @@ header{
     #headMenu{
         z-index: 1;
         padding-left: 0;
-        position: absolute;
-        background: gray;
+        position: fixed;
+        background: #e7e7e9;
         left: -200px;
         transition: 0.7s;
+        border-radius: 4px;
         
         li{
             
@@ -77,15 +78,17 @@ header{
         }
     }
     #button-menu{
-        position: absolute;
-        right: 45px;
-        top: 25px;
+        position: fixed;
+        right: 14px;
+        top: 20px;
         width: 30px;
         height: 30px;
         display: none;
         button{
             width: 100%;
             position: absolute;
+            color: $pink;
+            font-size: 18px;
         }
         #open{
             

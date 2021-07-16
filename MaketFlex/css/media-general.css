@@ -69,6 +69,7 @@
         -ms-flex-align: center;
             align-items: center; }
     .about-us .row .col-3 {
+      display: none;
       width: 54%;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -77,9 +78,9 @@
         display: block; }
       .about-us .row .col-3 .menu .submenu {
         display: none; }
-      .about-us .row .col-3 #fas1:hover #submenu1 {
+      .about-us .row .col-3 .menu #fas1:hover #submenu1 {
         display: block; }
-      .about-us .row .col-3 #fas2:hover #submenu2 {
+      .about-us .row .col-3 .menu #fas2:hover #submenu2 {
         display: block; }
     .about-us .row .col-9 {
       width: 100%;

@@ -1,10 +1,4 @@
 @media all and (max-width: 772px) {
-  .about-us .row .col-3 .menu .submenu {
-    display: none; }
-  .about-us .row .col-3 #aboutUs:hover #submenu1 {
-    display: block; }
-  .about-us .row .col-3 #services:hover #submenu2 {
-    display: block; }
   .about-us .row .col-9 {
     border: none;
     text-align: center; }

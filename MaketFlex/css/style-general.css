@@ -25,11 +25,12 @@ header {
   header #headMenu {
     z-index: 1;
     padding-left: 0;
-    position: absolute;
-    background: gray;
+    position: fixed;
+    background: #e7e7e9;
     left: -200px;
     -webkit-transition: 0.7s;
-    transition: 0.7s; }
+    transition: 0.7s;
+    border-radius: 4px; }
     header #headMenu li {
       border: none;
       border-radius: 30px;
@@ -61,15 +62,17 @@ header {
       header #headMenu li .submenu a:hover {
         background: #e53a81; }
   header #button-menu {
-    position: absolute;
-    right: 45px;
-    top: 25px;
+    position: fixed;
+    right: 14px;
+    top: 20px;
     width: 30px;
     height: 30px;
     display: none; }
     header #button-menu button {
       width: 100%;
-      position: absolute; }
+      position: absolute;
+      color: #e53a81;
+      font-size: 18px; }
     header #button-menu #open {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); }

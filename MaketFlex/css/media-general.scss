@@ -104,6 +104,7 @@
             flex-direction: column-reverse;
             align-items: center;
             .col-3{
+                display: none;
                 width: 54%;
                  justify-content: center;
                 .menu{
@@ -115,13 +116,14 @@
                     .submenu{
                         display: none;
                     }
+                    #fas1:hover #submenu1{
+                        display: block;
+                    }
+                    #fas2:hover #submenu2{
+                      display: block;
+                  }
                 }
-                #fas1:hover #submenu1{
-                    display: block;
-                }
-                #fas2:hover #submenu2{
-                  display: block;
-              }
+               
                  
             }
             .col-9{
