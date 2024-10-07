@@ -8,27 +8,15 @@
 </head>
 <body>
     <script>
-        var family = prompt ("Введите вашу фамилию:");
-        var name = prompt ("Введите ваше имя:");
-        var patronymic = prompt ("Введите ваше отчество:");
-        var yearINT = prompt ("Введите ваш возраст(в годах):");
-        var year = parseInt(yearINT);
-        var day = (year*365);
-        var day5 = (year+5);
-        var gender = confirm ("Ваш пол мужской?");
-        var pension;
-        var genderTrue;
-        if (gender==true && year>=62){
-            pension = "Да"}
-            else if (gender==false && year>=57){
-                pension = "Да"}
+        let family = prompt ("Введите вашу фамилию:");
+        let name = prompt ("Введите ваше имя:");
+        let love = confirm ("Вы любите Настю?");
+        if ((name.toUpperCase() === 'ПАША' || name.toUpperCase() === 'ПАВЕЛ') && family.toUpperCase() === 'БОРОДИН' && love === true){
+            alert(`${name} ${family}, я тоже тебя очень люблю!!!`)}
+            else if ((name.toUpperCase() === 'ПАША'|| name.toUpperCase() === 'ПАВЕЛ') && family.toUpperCase() === 'БОРОДИН' && love === false){
+                alert(`${name} ${family}, Пошел в ЖОПУ)`)}
             else {
-                pension = "Нет"};
-        if (gender==true){
-            genderTrue="Мужской"}
-            else { genderTrue="Женский"};
-        
-            alert ("Ваше ФИО: "+' '+ family +' '+ name + ' '+ patronymic+ '\n'+ "Ваш возраст в годах:"+' '+ year+ '\n'+ "Ваш возраст в днях:"+' '+ day+ '\n'+ "через 5 лет вам будет:"+' '+ day5+'\n'+"Ваш пол: "+' '+ genderTrue+'\n'+ "вы на пенсии: "+' '+ pension);
+                alert(`${name} ${family}, Она вас не любит!!!)`)};
 
     </script>
 
